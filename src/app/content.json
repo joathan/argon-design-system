@@ -1,0 +1,212 @@
+{
+  "global": {
+    "menu": [
+      {
+        "menuList": [
+          {
+            "icon": "home",
+            "name": "Início",
+            "url": "/"
+          },
+          {
+            "icon": "pencil-ruler",
+            "name": "Guia de Design",
+            "elementRef": "designSection",
+            "submenuList": [
+              {
+                "name": "Princípios",
+                "url": "/"
+              },
+              {
+                "name": "Cores",
+                "url": "./colors.html"
+              },
+              {
+                "name": "Sistema de Grid",
+                "url": "./grid.html"
+              },
+              {
+                "name": "Tipografia",
+                "url": "./typography.html"
+              }
+            ]
+          },
+          {
+            "icon": "code",
+            "name": "Guia de Desenvolvimento",
+            "elementRef": "devSection",
+            "submenuList": [
+              {
+                "name": "Princípios",
+                "url": "/"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "Elementos",
+        "menuList": [
+          {
+            "icon": "puzzle-piece",
+            "name": "Badges",
+            "url": "./badges.html"
+          },
+          {
+            "icon": "puzzle-piece",
+            "name": "Buttons",
+            "url": "./buttons.html"
+          },
+          {
+            "icon": "puzzle-piece",
+            "name": "Status",
+            "url": "./status.html"
+          }
+        ]
+      },
+      {
+        "category_name": "Componentes",
+        "menuList": [
+          {
+            "icon": "puzzle-piece",
+            "name": "Alerts",
+            "url": "./alerts.html"
+          },
+          {
+            "icon": "puzzle-piece",
+            "name": "Pagination",
+            "url": "./pagination.html"
+          },
+          {
+            "icon": "puzzle-piece",
+            "name": "Tables",
+            "url": "./tables.html"
+          },
+          {
+            "icon": "puzzle-piece",
+            "name": "Cards",
+            "elementRef": "cardForm",
+            "submenuList": [
+              {
+                "name": "Card de Indicadores",
+                "url": "./indicator.html"
+              }
+            ]
+          },
+          {
+            "icon": "puzzle-piece",
+            "name": "Formulários",
+            "elementRef": "componentForm",
+            "submenuList": [
+              {
+                "name": "Form Groups",
+                "url": "./form-groups.html"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "category_name": "Templates",
+        "menuList": [
+          {
+            "icon": "puzzle-piece",
+            "name": "Header",
+            "url": "/"
+          }
+        ]
+      },
+      {
+        "category_name": "Páginas",
+        "menuList": [
+          {
+            "icon": "layer-group",
+            "name": "Genericas",
+            "elementRef": "pagesGeneral",
+            "submenuList": [
+              {
+                "name": "Início (Home)",
+                "url": "/"
+              }
+            ]
+          },
+          {
+            "icon": "heart",
+            "name": "Zygo (Produto)",
+            "elementRef": "pagesZygoProduct",
+            "submenuList": [
+              {
+                "name": "Início (Home)",
+                "url": "./home-onboarding.html"
+              },
+              {
+                "name": "Promoções (Início)",
+                "url": "./promotions.html"
+              },
+              {
+                "name": "Promoções (Criação)",
+                "url": "./promotions-select.html"
+              },
+              {
+                "name": "Promoções (Listagem)",
+                "url": "./promotions-tabs.html"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "element": {
+    "card_stats": {
+      "variations": [
+        {
+          "type": "primary",
+          "title": "Primary w/ period",
+          "maxLimit": true,
+          "period": true,
+          "help": true,
+          "loading": true
+        },
+        {
+          "type": "primary",
+          "title": "Primary w/ period",
+          "maxLimit": true,
+          "period": true,
+          "help": true
+        },
+        {
+          "type": "primary",
+          "title": "Primary"
+        },
+        {
+          "type": "secondary",
+          "title": "Secondary"
+        },
+        {
+          "type": "info",
+          "title": "Info"
+        },
+        {
+          "type": "success",
+          "title": "Success"
+        },
+        {
+          "type": "warning",
+          "title": "Warning"
+        },
+        {
+          "type": "danger",
+          "title": "Danger"
+        }
+      ]
+    }
+  },
+  "page": {
+    "alerts": {
+      "header": {
+        "title": "Alerts"
+      }
+    }
+  }
+}

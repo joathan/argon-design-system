@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zygo Design System</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Start your development with a Dashboard for Bootstrap 4." />
+    <meta name="author" content="Creative Tim" />
+
+    <!-- Favicon -->
+    <link href="./assets/img/brand/favicon.png" rel="icon" type="image/png" />
+    <!-- Argon CSS -->
+    <link type="text/css" href="./assets/css/argon-styleguide.css?v=1.0.0" rel="stylesheet" />
+    <link type="text/css" href="./assets/css/all.css?v=1.0.0" rel="stylesheet" />
+    <link type="text/css" href="./assets/vendor/prismjs/prism.css?v=1.0.0" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div id="page-container">
+      {% include "partials/navbar-vertical.njk" %}
+
+      <main id="main-container">
+        {% include "partials/navbar.njk" %} {% block content %} {% endblock %}
+      </main>
+    </div>
+
+    <!-- Argon Scripts -->
+    <!-- Core -->
+    <script src="./assets/vendor/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/vendor/prismjs/prism.js?v=1.0.0"></script>
+    <!-- Optional JS -->
+    <script src="./assets/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="./assets/vendor/chart.js/dist/Chart.extension.js"></script>
+    <!-- Argon JS -->
+    <script src="./assets/js/argon.js?v=1.0.0" type="module"></script>
+    <script src="./assets/vendor/nunjucks/nunjucks.js"></script>
+  </body>
+</html>

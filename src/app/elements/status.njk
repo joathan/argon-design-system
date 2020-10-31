@@ -1,0 +1,218 @@
+{% extends "layout.njk" %} {% block content %}
+
+<main class="p-4" role="main">
+  <header>
+    <div class="ct-page-title">
+      <h1 class="ct-title" id="content">Status</h1>
+    </div>
+    <p class="ct-lead">Descrição do componente</p>
+  </header>
+  <hr />
+  <h3 id="examples">Light background</h3>
+  <div class="ct-example">
+    <ul class="nav nav-tabs-code" id="status-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="status-component-tab" data-toggle="tab" href="#status-component" role="tab" aria-controls="status-component" aria-selected="true">Result</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="status-html-tab" data-toggle="tab" href="#status-html" role="tab" aria-controls="status-html" aria-selected="false">HTML</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <section id="status-component" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="status-component-tab">
+        <div class="p-2">
+          <div class="status status-default">
+            <div class="status-color"></div>
+            <span class="status-text">Status default</span>
+          </div>
+
+          <br />
+
+          <div class="status status-primary">
+            <div class="status-color"></div>
+            <span class="status-text">Status primary</span>
+          </div>
+
+          <br />
+
+          <div class="status status-secondary">
+            <div class="status-color"></div>
+            <span class="status-text">Status secondary</span>
+          </div>
+
+          <br />
+
+          <div class="status status-info">
+            <div class="status-color"></div>
+            <span class="status-text">Status info</span>
+          </div>
+
+          <br />
+
+          <div class="status status-success">
+            <div class="status-color"></div>
+            <span class="status-text">Status success</span>
+          </div>
+
+          <br />
+
+          <div class="status status-danger">
+            <div class="status-color"></div>
+            <span class="status-text">Status danger</span>
+          </div>
+
+          <br />
+
+          <div class="status status-warning">
+            <div class="status-color"></div>
+            <span class="status-text">Status warning</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="status-html" class="tab-pane fade tab-example-result-html" role="tabpanel" aria-labelledby="status-html-tab">
+        <script type="text/plain" class="language-html">
+          <div class="status status-default">
+            <div class="status-color"></div>
+            <span class="status-text">Status default</span>
+          </div>
+
+          <div class="status status-primary">
+            <div class="status-color"></div>
+            <span class="status-text">Status primary</span>
+          </div>
+
+          <div class="status status-secondary">
+            <div class="status-color"></div>
+            <span class="status-text">Status secondary</span>
+          </div>
+
+          <div class="status status-info">
+            <div class="status-color"></div>
+            <span class="status-text">Status info</span>
+          </div>
+
+          <div class="status status-success">
+            <div class="status-color"></div>
+            <span class="status-text">Status success</span>
+          </div>
+
+          <div class="status status-danger">
+            <div class="status-color"></div>
+            <span class="status-text">Status danger</span>
+          </div>
+
+          <div class="status status-warning">
+            <div class="status-color"></div>
+            <span class="status-text">Status warning</span>
+          </div>
+        </script>
+      </section>
+    </div>
+  </div>
+
+  <h3 id="examples">Dark background</h3>
+  <div class="ct-example">
+    <ul class="nav nav-tabs-code" id="status-dark-tab" role="dark-tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="status-dark-component-tab" data-toggle="tab" href="#status-dark-component" role="tab" aria-controls="status-dark-component" aria-selected="true">Result</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="status-dark-html-tab" data-toggle="tab" href="#status-dark-html" role="tab" aria-controls="status-dark-html" aria-selected="false">HTML</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <section id="status-dark-component" class="tab-pane tab-example-result-dark fade show active" role="dark-tabpanel" aria-labelledby="status-dark-component-tab">
+        <div class="p-2">
+          <div class="status status-default dark">
+            <div class="status-color"></div>
+            <span class="status-text">Status default</span>
+          </div>
+
+          <br />
+
+          <div class="status status-primary dark">
+            <div class="status-color"></div>
+            <span class="status-text">Status primary</span>
+          </div>
+
+          <br />
+
+          <div class="status status-secondary dark">
+            <div class="status-color"></div>
+            <span class="status-text">Status secondary</span>
+          </div>
+
+          <br />
+
+          <div class="status status-info dark">
+            <div class="status-color"></div>
+            <span class="status-text">Status info</span>
+          </div>
+
+          <br />
+
+          <div class="status status-success dark">
+            <div class="status-color"></div>
+            <span class="status-text">Status success</span>
+          </div>
+
+          <br />
+
+          <div class="status status-danger dark">
+            <div class="status-color"></div>
+            <span class="status-text">Status danger</span>
+          </div>
+
+          <br />
+
+          <div class="status status-warning dark">
+            <div class="status-color"></div>
+            <span class="status-text">Status warning</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="status-dark-html" class="tab-pane tab-example-result-html fade" role="dark-tabpanel" aria-labelledby="status-dark-html-tab">
+        <script type="text/plain" class="language-html">
+          <div class="status status-default dark">
+            <div class="status-color"></div>
+            <span class="status-text">Status default</span>
+          </div>
+
+          <div class="status status-primary dark">
+            <div class="status-color"></div>
+            <span class="status-text">Status primary</span>
+          </div>
+
+          <div class="status status-secondary dark">
+            <div class="status-color"></div>
+            <span class="status-text">Status secondary</span>
+          </div>
+
+          <div class="status status-info dark">
+            <div class="status-color"></div>
+            <span class="status-text">Status info</span>
+          </div>
+
+          <div class="status status-success dark">
+            <div class="status-color"></div>
+            <span class="status-text">Status success</span>
+          </div>
+
+          <div class="status status-danger dark">
+            <div class="status-color"></div>
+            <span class="status-text">Status danger</span>
+          </div>
+
+          <div class="status status-warning dark">
+            <div class="status-color"></div>
+            <span class="status-text">Status warning</span>
+          </div>
+        </script>
+      </section>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

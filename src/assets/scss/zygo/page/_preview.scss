@@ -1,0 +1,105 @@
+// Preview website
+#page-container-preview {
+  #main-container {
+    height: 100vh;
+    margin: 0 -15px;
+    #iframe {
+      width: 100%;
+      height: calc(100vh - 116px);
+
+      @include media-breakpoint-down(md) {
+        height: calc(100vh - 108px);
+      }
+
+      @include media-breakpoint-down(sm) {
+        height: calc(100vh - 136px);
+      }
+      @include media-breakpoint-down(xs) {
+        height: calc(100vh - 156px);
+      }
+    }
+  }
+
+  #footer-main {
+    @extend .card;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: 20px 15px;
+    border-radius: 0;
+
+    .footer-container {
+      @include make-container();
+      @include make-container-max-widths();
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+
+      .footer-content {
+        flex: 1 1 auto;
+        text-align: center;
+
+        h4 {
+          font-size: 1.3rem;
+          margin-bottom: 0;
+        }
+      }
+      .footer-action {
+        flex: 0 0 auto;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      padding: 15px;
+
+      .footer-container {
+        flex-wrap: wrap;
+        text-align: center;
+
+        .footer-content,
+        .footer-action {
+          width: 100%;
+          flex: 1 1 auto;
+        }
+
+        .footer-action {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          margin-top: 15px;
+
+          .btn {
+            &.btn-success {
+              order: -1;
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    @include media-breakpoint-down(xs) {
+      justify-content: center;
+      height: 156px;
+      padding: 10px;
+
+      .footer-container {
+        .footer-content {
+          h4 {
+            font-size: 1rem;
+          }
+        }
+        .footer-action {
+          .btn {
+            padding: $input-btn-padding-y-sm $input-btn-padding-x-sm;
+            font-size: $font-size-sm;
+            line-height: 1.5;
+            border-radius: $border-radius;
+          }
+        }
+      }
+    }
+  }
+}

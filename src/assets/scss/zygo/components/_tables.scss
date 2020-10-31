@@ -1,0 +1,121 @@
+.table {
+  th {
+    text-align: center;
+  }
+}
+
+.promo-table {
+  width: 100%;
+
+  .table {
+    &-promotions {
+      thead {
+        th {
+          padding: 13px 1.5rem;
+
+          background: $ghost-white;
+          border: none;
+          text-transform: unset;
+          letter-spacing: normal;
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 1;
+          text-align: center;
+          white-space: normal;
+        }
+      }
+
+      tbody {
+        tr {
+          border-bottom: 1px solid rgba(136, 152, 170, 0.15);
+
+          &:last-of-type {
+            border: none;
+          }
+        }
+
+        td {
+          border: none;
+          text-align: center;
+          white-space: normal;
+          padding: 10px;
+        }
+
+        img {
+          display: block;
+          margin: 0 auto;
+          max-width: 120px;
+        }
+
+        .desc {
+          max-width: 385px;
+
+          .promo-item-desc {
+            text-align: left;
+            max-width: 385px;
+          }
+
+          .desc-content {
+            display: block;
+            font-weight: bold;
+          }
+        }
+
+        .promo-item-indicator {
+          display: flex;
+          align-items: center;
+          flex: 0 0 36%;
+          justify-content: space-around;
+        }
+
+        .promo-item-total,
+        .promo-item-ticket {
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+
+          .total-desc,
+          .ticket-desc {
+            font-size: 11.4px;
+            color: $night-rider;
+            margin-bottom: 11px;
+            line-height: 1.2;
+            margin: 0 !important;
+          }
+
+          .total-number,
+          .ticket-value {
+            font-size: 20px;
+            font-weight: bold;
+            color: $primary;
+          }
+        }
+
+        .promo-item-date {
+          font-size: 16px;
+          font-weight: bold;
+          color: $primary;
+        }
+
+        .promo-item-total {
+          flex: 0 0 100px;
+        }
+
+        .promo-item-buttons {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex: 0 0 auto;
+        }
+      }
+
+      .badge-primary {
+        background: rgba(212, 215, 248, 0.5);
+        color: $primary;
+        font-size: 10px;
+        padding: 3px 9px;
+        line-height: 1;
+      }
+    }
+  }
+}

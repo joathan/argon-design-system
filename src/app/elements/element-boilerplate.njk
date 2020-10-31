@@ -1,0 +1,58 @@
+{% extends "layout.njk" %} {% block content %}
+
+<main class="p-4" role="main">
+  <header>
+    <div class="ct-page-title">
+      <h1 class="ct-title" id="content">Nome do componente</h1>
+    </div>
+    <p class="ct-lead">Descrição do componente</p>
+  </header>
+  <hr />
+  <h3 id="examples">Light background</h3>
+  <div class="ct-example">
+    <ul class="nav nav-tabs-code" id="tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="component-tab" data-toggle="tab" href="#component" role="tab" aria-controls="component" aria-selected="true">Result</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="html-tab" data-toggle="tab" href="#html" role="tab" aria-controls="html" aria-selected="false">HTML</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <section id="component" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="component-tab">
+        <div class="p-2">
+          {# #}
+        </div>
+      </section>
+
+      <section id="html" class="tab-pane fade tab-example-result-html" role="tabpanel" aria-labelledby="html-tab">
+        <script type="text/plain" class="language-html"></script>
+      </section>
+    </div>
+  </div>
+
+  <h3 id="examples">Dark background</h3>
+  <div class="ct-example">
+    <ul class="nav nav-tabs-code" id="dark-tab" role="dark-tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="dark-component-tab" data-toggle="tab" href="#dark-component" role="tab" aria-controls="dark-component" aria-selected="true">Result</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="dark-html-tab" data-toggle="tab" href="#dark-html" role="tab" aria-controls="dark-html" aria-selected="false">HTML</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <section id="dark-component" class="tab-pane tab-example-result-dark fade show active" role="dark-tabpanel" aria-labelledby="dark-component-tab">
+        <div class="p-2">
+          {# #}
+        </div>
+      </section>
+
+      <section id="dark-html" class="tab-pane tab-example-result-html fade" role="dark-tabpanel" aria-labelledby="dark-html-tab">
+        <script type="text/plain" class="language-html"></script>
+      </section>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

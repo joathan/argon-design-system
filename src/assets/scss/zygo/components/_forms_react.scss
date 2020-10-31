@@ -1,0 +1,149 @@
+.form-react {
+  position: relative;
+  height: 100%;
+  padding: 30px 0 100px 70px;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 22.5px;
+    border-left: 2px solid $primary;
+    height: 100%;
+  }
+
+  .step-form-icon {
+    position: absolute;
+    top: 0;
+    left: -72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid $primary;
+    border-radius: 50%;
+    background: $gray-100;
+    opacity: 1;
+    color: $primary;
+    font-size: 1.6em;
+    width: 50px;
+    height: 50px;
+    z-index: 50;
+  }
+
+  .step-form-content {
+    @extend .card;
+    margin-top: 0 !important;
+
+    .card-body {
+      .step-form-header {
+        margin-bottom: 25px;
+
+        h4 {
+          font-weight: 700;
+        }
+
+        h4,
+        p {
+          margin-bottom: 0;
+        }
+      }
+
+      .row {
+        margin-bottom: 15px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .card-footer {
+      border-top: 0;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    padding-left: 0;
+    padding-bottom: 0;
+
+    &:before,
+    .step-form-icon {
+      display: none;
+    }
+  }
+}
+
+.form-react-footer {
+  width: 100%;
+  max-width: calc((100vw - 250px) - 15px);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+
+  .footer-wrapper {
+    display: flex;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+    .footer-wrapper-spacing {
+      width: calc(70px + 15px);
+      flex: 0 0 auto;
+
+      @include media-breakpoint-down(md) {
+        display: none;
+      }
+    }
+
+    .footer-wrapper-content {
+      margin: 0 15px 0 0;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      border-radius: 0.2857rem 0.2857rem 0 0;
+      padding: 1.2rem 1.5rem;
+      background-color: #fff;
+      box-shadow: 0 0 16px 0 rgba(136, 152, 170, 0.15);
+
+      @include media-breakpoint-down(md) {
+        margin: 0;
+      }
+
+      @include media-breakpoint-down(sm) {
+        flex-wrap: wrap;
+
+        .btn {
+          width: 100%;
+          margin: 10px 0 0;
+
+          &.btn-success {
+            order: -1;
+
+            &:first-child {
+              margin-top: 0;
+            }
+          }
+
+          &.btn-outline-secondary {
+            order: 1000;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-wrapper {
+    @each $breakpoint, $max-width in $container-max-widths {
+      @include media-breakpoint-up($breakpoint) {
+        max-width: calc(#{$max-width} - 2px);
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    position: relative;
+    max-width: 100%;
+  }
+}

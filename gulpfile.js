@@ -1,34 +1,35 @@
-var gulp = require('gulp');
-var path = require('path');
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var sourcemaps = require('gulp-sourcemaps');
-var open = require('gulp-open');
+const gulp = require('gulp');
+const HubRegistry = require('gulp-hub');
+const browserSync = require('browser-sync');
 
-var Paths = {
-  HERE: './',
-  DIST: 'dist/',
-  CSS: './assets/css/',
-  SCSS_TOOLKIT_SOURCES: './assets/scss/blk-design-system.scss',
-  SCSS: './assets/scss/**/**'
-};
+const conf = require('./conf/gulp.conf');
 
-gulp.task('compile-scss', function() {
-  return gulp.src(Paths.SCSS_TOOLKIT_SOURCES)
-    .pipe(sourcemaps.init())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(autoprefixer())
-    .pipe(sourcemaps.write(Paths.HERE))
-    .pipe(gulp.dest(Paths.CSS));
-});
+// Load some files into the registry
+const hub = new HubRegistry([conf.path.tasks('*.js')]);
 
-gulp.task('watch', function() {
-  gulp.watch(Paths.SCSS, ['compile-scss']);
-});
+// Tell gulp to use the tasks just loaded
+gulp.registry(hub);
 
-gulp.task('open', function() {
-  gulp.src('index.html')
-    .pipe(open());
-});
+gulp.task('build');
+gulp.task('serve', gulp.series('nunjucksFormatter', 'nunjucks', 'fonts', 'images', 'vendor', 'styles', 'scripts', 'watch', 'browsersync'));
+gulp.task('serve:dist', gulp.series('default', 'browsersync:dist'));
+gulp.task('default', gulp.series('clean', 'build'));
+gulp.task('watch', watch);
 
-gulp.task('open-app', ['open', 'watch']);
+function reloadBrowserSync(cb) {
+  browserSync.reload();
+  cb();
+}
+
+function watch(done) {
+  gulp.watch([conf.path.src('**/*.scss'), conf.path.src('**/*.css')], gulp.series('styles'));
+
+  gulp.watch(conf.path.src('**/*.js'), gulp.series('scripts'));
+
+  gulp.watch(conf.path.src('**/*.+(html|njk|nunjucks)'), gulp.series('nunjucksFormatter', 'nunjucks'));
+  gulp.watch(conf.path.src('./app/content.json'), gulp.series('nunjucksFormatter', 'nunjucks'));
+
+  gulp.watch(conf.path.src('**/*.+(png|jpg|gif|svg)'), gulp.series('images'));
+
+  done();
+}

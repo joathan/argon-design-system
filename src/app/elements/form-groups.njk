@@ -1,0 +1,262 @@
+{% extends "layout.njk" %} {% block content %}
+
+<main class="p-4" role="main">
+  <header>
+    <div class="ct-page-title">
+      <h1 class="ct-title" id="content">Form Groups</h1>
+    </div>
+    <p class="ct-lead">Descrição do componente</p>
+  </header>
+  <hr />
+  <h3 id="examples">Input</h3>
+  <div class="ct-example">
+    <ul class="nav nav-tabs-code" id="tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="component-tab" data-toggle="tab" href="#component" role="tab" aria-controls="component" aria-selected="true">Result</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="html-tab" data-toggle="tab" href="#html" role="tab" aria-controls="html" aria-selected="false">HTML</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <section id="component" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="component-tab">
+        <div class="p-2">
+          <form>
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">@</span>
+              </div>
+              <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" />
+            </div>
+
+            <div class="form-group">
+              <input type="text" class="form-control" id="input-1" placeholder="Regular" />
+            </div>
+
+            <div class="form-group has-label">
+              <label for="input-2">With label</label>
+              <input type="text" class="form-control" id="input-2" placeholder="Regular" />
+            </div>
+
+            <hr />
+
+            <div class="form-group small">
+              <input type="text" class="form-control" id="input-1" placeholder="Small" />
+            </div>
+
+            <div class="form-group has-label small">
+              <label for="input-2">With label</label>
+              <input type="text" class="form-control" id="input-2" placeholder="Small" />
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="html" class="tab-pane fade tab-example-result-html" role="tabpanel" aria-labelledby="html-tab">
+        <script type="text/plain" class="language-html">
+
+          <form>
+
+            <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                </div>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+            </div>
+
+            <div class="form-group">
+                <input type="text" class="form-control" id="input-1" placeholder="Regular">
+            </div>
+
+            <div class="form-group has-label">
+                <label for="input-2">With label</label>
+                <input type="text" class="form-control" id="input-2" placeholder="Regular">
+            </div>
+
+            <div class="form-group small">
+                <input type="text" class="form-control" id="input-1" placeholder="Small">
+            </div>
+
+            <div class="form-group has-label small">
+                <label for="input-2">With label</label>
+                <input type="text" class="form-control" id="input-2" placeholder="Small">
+            </div>
+
+          </form>
+        </script>
+      </section>
+    </div>
+  </div>
+
+  <h3 id="examples">Textarea</h3>
+  <div class="ct-example">
+    <ul class="nav nav-tabs-code" id="textarea-tab" role="textarea-tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="textarea-component-tab" data-toggle="tab" href="#textarea-component" role="tab" aria-controls="textarea-component" aria-selected="true">Result</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="textarea-html-tab" data-toggle="tab" href="#textarea-html" role="tab" aria-controls="textarea-html" aria-selected="false">HTML</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <section id="textarea-component" class="tab-pane tab-example-result fade show active" role="textarea-tabpanel" aria-labelledby="textarea-component-tab">
+        <div class="p-2">
+          <form>
+            <div class="form-group">
+              <textarea placeholder="Placeholder" class="form-control" id="textarea-1"></textarea>
+            </div>
+
+            <hr />
+
+            <div class="form-group has-label">
+              <label for="textarea-2">With label</label>
+              <textarea placeholder="Placeholder" class="form-control" id="textarea-2"></textarea>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="textarea-html" class="tab-pane tab-example-result-html fade" role="textarea-tabpanel" aria-labelledby="textarea-html-tab">
+        <script type="text/plain" class="language-html">
+
+          <form>
+
+              <div class="form-group">
+                  <textarea placeholder="Placeholder" class="form-control" id="textarea-1"></textarea>
+              </div>
+
+              <div class="form-group has-label">
+                  <label for="textarea-2">With label</label>
+                  <textarea placeholder="Placeholder" class="form-control" id="textarea-2"></textarea>
+              </div>
+
+          </form>
+        </script>
+      </section>
+    </div>
+  </div>
+
+  <h3 id="examples">Select</h3>
+  <div class="ct-example">
+    <ul class="nav nav-tabs-code" id="select-tab" role="select-tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="select-component-tab" data-toggle="tab" href="#select-component" role="tab" aria-controls="select-component" aria-selected="true">Result</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="select-html-tab" data-toggle="tab" href="#select-html" role="tab" aria-controls="select-html" aria-selected="false">HTML</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <section id="select-component" class="tab-pane tab-example-result fade show active" role="select-tabpanel" aria-labelledby="select-component-tab">
+        <div class="p-2">
+          <form>
+            <div class="form-group select">
+              <select class="form-control" id="select-1">
+                <option>Regular</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option>Option 5</option>
+              </select>
+            </div>
+
+            <div class="form-group select has-label">
+              <label for="select-2">With label</label>
+              <select class="form-control" id="select-2">
+                <option>Regular</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option>Option 5</option>
+              </select>
+            </div>
+
+            <hr />
+
+            <div class="form-group select small">
+              <select class="form-control" id="select-3">
+                <option>Small</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option>Option 5</option>
+              </select>
+            </div>
+
+            <div class="form-group select has-label small">
+              <label for="select-3">With label</label>
+              <select class="form-control" id="select-4">
+                <option>Small</option>
+                <option>Option 1</option>
+                <option>Option 2</option>
+                <option>Option 3</option>
+                <option>Option 4</option>
+                <option>Option 5</option>
+              </select>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section id="select-html" class="tab-pane tab-example-result-html fade" role="select-tabpanel" aria-labelledby="select-html-tab">
+        <script type="text/plain" class="language-html">
+
+          <form>
+
+              <div class="form-group select">
+                  <select class="form-control" id="select-1">
+                      <option>Regular</option>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                      <option>Option 4</option>
+                      <option>Option 5</option>
+                  </select>
+              </div>
+
+              <div class="form-group select has-label">
+                  <label for="select-2">With label</label>
+                  <select class="form-control" id="select-2">
+                      <option>Regular</option>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                      <option>Option 4</option>
+                      <option>Option 5</option>
+                  </select>
+              </div>
+
+              <div class="form-group select small">
+                  <select class="form-control" id="select-3">
+                      <option>Small</option>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                      <option>Option 4</option>
+                      <option>Option 5</option>
+                  </select>
+              </div>
+
+              <div class="form-group select has-label small">
+                  <label for="select-3">With label</label>
+                  <select class="form-control" id="select-4">
+                      <option>Small</option>
+                      <option>Option 1</option>
+                      <option>Option 2</option>
+                      <option>Option 3</option>
+                      <option>Option 4</option>
+                      <option>Option 5</option>
+                  </select>
+              </div>
+
+          </form>
+        </script>
+      </section>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

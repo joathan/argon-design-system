@@ -1,0 +1,66 @@
+.promo-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 11px;
+
+  border-radius: 4.8px;
+  box-shadow: 0 0 4px 0 rgba(133, 133, 133, 0.5);
+  padding: 20px 15px;
+
+  .promo-item-image {
+    margin-right: 20px;
+    min-width: 120px;
+
+    img {
+      max-width: 100%;
+    }
+  }
+
+  .promo-item-desc {
+    flex: 1 1 40%;
+
+    line-height: 1;
+    margin-right: 25px;
+    font-size: 13.3px;
+    font-weight: bold;
+    color: $night-rider;
+  }
+
+  .promo-item-indicator {
+    display: flex;
+    align-items: center;
+    flex: 0 0 36%;
+    justify-content: space-between;
+  }
+
+  .promo-item-total,
+  .promo-item-ticket {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    margin-right: 25px;
+    // max-width: 100px;
+
+    .total-desc,
+    .ticket-desc {
+      font-size: 11.4px;
+      color: $night-rider;
+      margin-bottom: 11px;
+      line-height: 1.2;
+    }
+
+    .total-number,
+    .ticket-value {
+      font-size: 20px;
+      font-weight: bold;
+      color: $primary;
+    }
+  }
+
+  .promo-item-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+  }
+}

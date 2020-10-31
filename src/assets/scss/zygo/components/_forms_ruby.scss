@@ -1,0 +1,137 @@
+.form-ruby {
+  position: relative;
+  height: 100%;
+  margin-bottom: 100px !important;
+
+  .card {
+    margin-bottom: 30px;
+
+    .card-header {
+      border-bottom: 0;
+
+      .card-title {
+        font-size: $h4-font-size;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    .card-body {
+      .lead {
+        font-weight: 400 !important;
+
+        strong {
+          font-weight: 800;
+        }
+      }
+
+      .row {
+        margin-bottom: 25px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      table,
+      .table {
+        td {
+          vertical-align: middle;
+        }
+      }
+    }
+
+    .card-footer {
+      display: flex;
+      border-top: 0;
+
+      .btn {
+        margin-left: auto;
+
+        &.btn-outline-secondary {
+          margin-right: auto;
+        }
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  @include media-breakpoint-down(md) {
+    margin-bottom: 0 !important;
+  }
+}
+
+.form-ruby-footer {
+  width: 100%;
+  max-width: calc((100vw - 250px) - 15px);
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+
+  .footer-wrapper {
+    display: flex;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+
+    .footer-wrapper-content {
+      margin: 0 15px 0;
+      flex-grow: 1;
+      display: flex;
+      align-items: center;
+      border-radius: 0.2857rem 0.2857rem 0 0;
+      padding: 1.2rem 1.5rem;
+      background-color: #fff;
+      box-shadow: 0 0 16px 0 rgba(136, 152, 170, 0.15);
+
+      .btn {
+        &.btn-success {
+          margin-left: auto;
+        }
+      }
+
+      @include media-breakpoint-down(md) {
+        margin: 0;
+      }
+
+      @include media-breakpoint-down(sm) {
+        flex-wrap: wrap;
+
+        .btn {
+          width: 100%;
+          margin: 10px 0 0;
+
+          &.btn-success {
+            order: -1;
+
+            &:first-child {
+              margin-top: 0;
+            }
+          }
+
+          &.btn-outline-secondary {
+            order: 1000;
+          }
+        }
+      }
+    }
+  }
+
+  .footer-wrapper {
+    @each $breakpoint, $max-width in $container-max-widths {
+      @include media-breakpoint-up($breakpoint) {
+        max-width: calc(#{$max-width} - 2px);
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    position: relative;
+    max-width: 100%;
+  }
+}

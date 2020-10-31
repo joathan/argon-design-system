@@ -1,0 +1,6 @@
+@if $enable-grid-classes {
+  .container-intro {
+    @include make-container();
+    @include make-container-max-widths($container-intro-max-widths);
+  }
+}

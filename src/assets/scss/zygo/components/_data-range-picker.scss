@@ -1,0 +1,19 @@
+.daterangepicker {
+  .ranges {
+    ul {
+      li.active {
+        background-color: $default;
+        color: $primary;
+        font-weight: 600;
+      }
+    }
+  }
+
+  .table-condensed {
+    td {
+      &.active {
+        border-radius: 50%;
+      }
+    }
+  }
+}

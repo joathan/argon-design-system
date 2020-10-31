@@ -1,0 +1,26 @@
+#layout-pdv-web {
+  .empty-state {
+    .wrapper {
+      .empty-state-icon {
+        margin-bottom: 10px;
+
+        i {
+          font-size: 4rem;
+          color: $body-color;
+        }
+      }
+
+      .empty-state-content {
+        .empty-state-title {
+          margin-bottom: 5px;
+          font-size: 1.2rem;
+          color: $body-color;
+        }
+
+        .empty-state-lead {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

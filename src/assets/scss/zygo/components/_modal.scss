@@ -1,0 +1,72 @@
+// MODAL ELEMENTS
+.modal-header {
+  align-items: center;
+
+  .modal-title {
+    font-size: $font-size-xl;
+    margin-bottom: 0;
+  }
+}
+
+.modal-footer {
+  padding: $modal-footer-padding-y $modal-footer-padding-x;
+}
+
+// MODAL STYLE - CONFIRMATION
+.modal-layout-confirmation {
+  .modal-header {
+    border-bottom: 0;
+  }
+
+  .modal-body {
+    padding-top: 0;
+    text-align: center;
+
+    i {
+      font-size: 100px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      display: inline-block;
+      margin-bottom: 25px;
+    }
+
+    .modal-title {
+      font-size: $font-size-xl;
+      margin-bottom: 5px;
+    }
+  }
+
+  .modal-footer {
+    justify-content: center;
+
+    .btn {
+      max-width: 100%;
+
+      @include media-breakpoint-up(md) {
+        min-width: 30%;
+      }
+    }
+
+    @include media-breakpoint-down(sm) {
+      flex-wrap: wrap;
+
+      .btn {
+        width: 100%;
+        margin: 10px 0 0;
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}
+
+// MODAL XL
+@include media-breakpoint-up(lg) {
+  .modal-xl {
+    max-width: $modal-xl;
+  }
+}

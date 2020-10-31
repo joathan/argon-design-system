@@ -1,0 +1,84 @@
+// HTML AND BODY REBOOT (TYPOGRAPHY)
+html,
+body {
+  font-size: $font-size-root;
+  line-height: 1.5;
+}
+
+// BODY
+body.menu-open {
+  @media (max-width: 991px) {
+    overflow: hidden;
+  }
+}
+
+// LINKS
+a {
+  position: relative;
+  transition: color 0.12s ease-out;
+
+  &.link-effect {
+    color: #1c94f5;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 50%;
+      right: 50%;
+      height: 1px;
+      background: darken(#1c94f5, 15%);
+      transition: all ease 0.2s;
+    }
+
+    &:hover {
+      color: darken(#1c94f5, 15%);
+
+      &:after {
+        left: 0;
+        right: 0;
+        height: 2px;
+      }
+    }
+  }
+}
+
+// PARAGRAPHS
+p {
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+// STRONG
+strong {
+  font-weight: 600;
+}
+
+// IMAGES AND FIGURES
+img {
+  max-width: 100%;
+}
+
+// HTML DEFAULT STRUCTURE
+// <div id="page-container"></div>
+// <aside id="sidebar"></aside>
+// <main id="main-container">
+//   <nav id="navbar-main"></nav>
+//   <header id="header-main"></header>
+//   <div id="content-main"></div>
+//   <footer id="footer-main"></footer>
+// </main>
+#page-container {
+  #main-container {
+    min-height: calc(100vh - 90px);
+    #content-main {
+      .container,
+      .container-fluid {
+        section {
+          margin-top: 30px;
+          margin-bottom: 100px; // so hubspot can not overlap with content
+        }
+      }
+    }
+  }
+}

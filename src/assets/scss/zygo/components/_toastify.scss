@@ -1,0 +1,13 @@
+.toastify {
+  box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.25) !important;
+  border-radius: 5px !important;
+  &-right {
+    .toast-close {
+      padding-left: 20px !important;
+    }
+  }
+}
+
+.toastify-top {
+  top: 80px !important;
+}

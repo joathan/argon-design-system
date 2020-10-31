@@ -1,0 +1,313 @@
+{% extends "layout.njk" %} {% block content %}
+
+<main class="style-guide style-guide-buttons p-4" role="main">
+  <header>
+    <div class="ct-page-title">
+      <h1 class="ct-title" id="content">Buttons</h1>
+    </div>
+    <p class="ct-lead">
+      Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
+    </p>
+  </header>
+  <hr />
+
+  <h3 id="examples">Icons</h3>
+  <div class="ct-example">
+    <ul class="nav nav-tabs-code" id="icon-tab" role="icon-tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="icon-component-tab" data-toggle="tab" href="#icon-component" role="tab" aria-controls="icon-component" aria-selected="true">Result</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="icon-html-tab" data-toggle="tab" href="#icon-html" role="tab" aria-controls="icon-html" aria-selected="false">HTML</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <section id="icon-component" class="tab-pane tab-example-result tab-pane-inline fade show active" role="icon-tabpanel" aria-labelledby="icon-component-tab">
+        <div class="p-2">
+          <button type="button" class="btn btn-primary btn-rounded">
+            <i class="fal fa-duck"></i>
+          </button>
+
+          <button type="button" class="btn btn-secondary btn-rounded">
+            <i class="fal fa-duck"></i>
+          </button>
+
+          <button type="button" class="btn btn-primary btn-icon">
+            <i class="fal fa-duck"></i>
+            With icon
+          </button>
+
+          <button type="button" class="btn btn-secondary btn-icon">
+            <i class="fal fa-duck"></i>
+            With icon
+          </button>
+        </div>
+      </section>
+
+      <section id="icon-html" class="tab-pane tab-example-result-html fade" role="icon-tabpanel" aria-labelledby="icon-html-tab">
+        <script type="text/plain" class="language-html">
+          <button type="button" class="btn btn-primary btn-rounded"><i class="fal fa-duck"></i></button>
+
+          <button type="button" class="btn btn-secondary btn-rounded"><i class="fal fa-duck"></i></button>
+
+          <button type="button" class="btn btn-primary btn-icon"><i class="fal fa-duck"></i>With icon</button>
+
+          <button type="button" class="btn btn-secondary btn-icon"><i class="fal fa-duck"></i>With icon</button>
+        </script>
+      </section>
+    </div>
+  </div>
+
+  <h3 id="examples">Regular</h3>
+  <div class="ct-example">
+    <ul class="nav nav-tabs-code" id="tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="component-tab" data-toggle="tab" href="#component" role="tab" aria-controls="component" aria-selected="true">Result</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="html-tab" data-toggle="tab" href="#html" role="tab" aria-controls="html" aria-selected="false">HTML</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <section id="component" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="component-tab">
+        <div class="p-2">
+          <button type="button" class="btn btn-default">Default</button>
+
+          <button type="button" class="btn btn-primary">Primary</button>
+
+          <button type="button" class="btn btn-secondary">Secondary</button>
+
+          <button type="button" class="btn btn-info">Info</button>
+
+          <button type="button" class="btn btn-success">Success</button>
+
+          <button type="button" class="btn btn-danger">Danger</button>
+
+          <button type="button" class="btn btn-warning">Warning</button>
+        </div>
+      </section>
+
+      <section id="html" class="tab-pane fade tab-example-result-html" role="tabpanel" aria-labelledby="html-tab">
+        <script type="text/plain" class="language-html">
+          <button type="button" class="btn btn-default">Default</button>
+
+          <button type="button" class="btn btn-primary">Primary</button>
+
+          <button type="button" class="btn btn-secondary">Secondary</button>
+
+          <button type="button" class="btn btn-info">Info</button>
+
+          <button type="button" class="btn btn-success">Success</button>
+
+          <button type="button" class="btn btn-danger">Danger</button>
+
+          <button type="button" class="btn btn-warning">Warning</button>
+        </script>
+      </section>
+    </div>
+  </div>
+
+  <h3 id="examples">Outline</h3>
+  <div class="ct-example">
+    <ul class="nav nav-tabs-code" id="outline-tab" role="outline-tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="outline-component-tab" data-toggle="tab" href="#outline-component" role="tab" aria-controls="outline-component" aria-selected="true">Result</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="outline-html-tab" data-toggle="tab" href="#outline-html" role="tab" aria-controls="outline-html" aria-selected="false">HTML</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <section id="outline-component" class="tab-pane tab-example-result fade show active" role="outline-tabpanel" aria-labelledby="outline-component-tab">
+        <div class="p-2">
+          <button type="button" class="btn btn-outline-default">Default</button>
+
+          <button type="button" class="btn btn-outline-primary">Primary</button>
+
+          <button type="button" class="btn btn-outline-secondary">
+            Secondary
+          </button>
+
+          <button type="button" class="btn btn-outline-info">Info</button>
+
+          <button type="button" class="btn btn-outline-success">Success</button>
+
+          <button type="button" class="btn btn-outline-danger">Danger</button>
+
+          <button type="button" class="btn btn-outline-warning">Warning</button>
+        </div>
+      </section>
+
+      <section id="outline-html" class="tab-pane tab-example-result-html fade" role="outline-tabpanel" aria-labelledby="outline-html-tab">
+        <script type="text/plain" class="language-html">
+          <button type="button" class="btn btn-outline-default">Default</button>
+
+          <button type="button" class="btn btn-outline-primary">Primary</button>
+
+          <button type="button" class="btn btn-outline-secondary">Secondary</button>
+
+          <button type="button" class="btn btn-outline-info">Info</button>
+
+          <button type="button" class="btn btn-outline-success">Success</button>
+
+          <button type="button" class="btn btn-outline-danger">Danger</button>
+
+          <button type="button" class="btn btn-outline-warning">Warning</button>
+        </script>
+      </section>
+    </div>
+  </div>
+
+  <h3 id="examples">Small</h3>
+  <div class="ct-example">
+    <ul class="nav nav-tabs-code" id="small-tab" role="small-tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="small-component-tab" data-toggle="tab" href="#small-component" role="tab" aria-controls="small-component" aria-selected="true">Result</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="small-html-tab" data-toggle="tab" href="#small-html" role="tab" aria-controls="small-html" aria-selected="false">HTML</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <section id="small-component" class="tab-pane tab-example-result fade show active" role="small-tabpanel" aria-labelledby="small-component-tab">
+        <div class="p-2">
+          <button type="button" class="btn btn-small btn-default">
+            Default
+          </button>
+
+          <button type="button" class="btn btn-small btn-primary">
+            Primary
+          </button>
+
+          <button type="button" class="btn btn-small btn-secondary">
+            Secondary
+          </button>
+
+          <button type="button" class="btn btn-small btn-info">Info</button>
+
+          <button type="button" class="btn btn-small btn-success">
+            Success
+          </button>
+
+          <button type="button" class="btn btn-small btn-danger">Danger</button>
+
+          <button type="button" class="btn btn-small btn-warning">
+            Warning
+          </button>
+        </div>
+      </section>
+
+      <section id="small-html" class="tab-pane tab-example-result-html fade" role="small-tabpanel" aria-labelledby="small-html-tab">
+        <script type="text/plain" class="language-html">
+          <button type="button" class="btn btn-small btn-default">Default</button>
+
+          <button type="button" class="btn btn-small btn-primary">Primary</button>
+
+          <button type="button" class="btn btn-small btn-secondary">Secondary</button>
+
+          <button type="button" class="btn btn-small btn-info">Info</button>
+
+          <button type="button" class="btn btn-small btn-success">Success</button>
+
+          <button type="button" class="btn btn-small btn-danger">Danger</button>
+
+          <button type="button" class="btn btn-small btn-warning">Warning</button>
+        </script>
+      </section>
+    </div>
+  </div>
+
+  <h3 id="examples">Large</h3>
+  <div class="ct-example">
+    <ul class="nav nav-tabs-code" id="large-tab" role="large-tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="large-component-tab" data-toggle="tab" href="#large-component" role="tab" aria-controls="large-component" aria-selected="true">Result</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="large-html-tab" data-toggle="tab" href="#large-html" role="tab" aria-controls="large-html" aria-selected="false">HTML</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <section id="large-component" class="tab-pane tab-example-result fade show active" role="large-tabpanel" aria-labelledby="large-component-tab">
+        <div class="p-2">
+          <button type="button" class="btn btn-large btn-default">
+            Default
+          </button>
+
+          <button type="button" class="btn btn-large btn-primary">
+            Primary
+          </button>
+
+          <button type="button" class="btn btn-large btn-secondary">
+            Secondary
+          </button>
+
+          <button type="button" class="btn btn-large btn-info">Info</button>
+
+          <button type="button" class="btn btn-large btn-success">
+            Success
+          </button>
+
+          <button type="button" class="btn btn-large btn-danger">Danger</button>
+
+          <button type="button" class="btn btn-large btn-warning">
+            Warning
+          </button>
+        </div>
+      </section>
+
+      <section id="large-html" class="tab-pane tab-example-result-html fade" role="large-tabpanel" aria-labelledby="large-html-tab">
+        <script type="text/plain" class="language-html">
+          <button type="button" class="btn btn-large btn-default">Default</button>
+
+          <button type="button" class="btn btn-large btn-primary">Primary</button>
+
+          <button type="button" class="btn btn-large btn-secondary">Secondary</button>
+
+          <button type="button" class="btn btn-large btn-info">Info</button>
+
+          <button type="button" class="btn btn-large btn-success">Success</button>
+
+          <button type="button" class="btn btn-large btn-danger">Danger</button>
+
+          <button type="button" class="btn btn-large btn-warning">Warning</button>
+        </script>
+      </section>
+    </div>
+  </div>
+
+  <h3 id="examples">Links</h3>
+  <div class="ct-example">
+    <ul class="nav nav-tabs-code" id="link-tab" role="link-tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="link-component-tab" data-toggle="tab" href="#link-component" role="tab" aria-controls="link-component" aria-selected="true">Result</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="link-html-tab" data-toggle="tab" href="#link-html" role="tab" aria-controls="link-html" aria-selected="false">HTML</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <section id="link-component" class="tab-pane tab-example-result fade show active" role="link-tabpanel" aria-labelledby="link-component-tab">
+        <div class="p-2">
+          <a class="btn btn-primary">Link</a>
+
+          <a class="btn btn-secondary">Link</a>
+        </div>
+      </section>
+
+      <section id="link-html" class="tab-pane tab-example-result-html fade" role="link-tabpanel" aria-labelledby="link-html-tab">
+        <script type="text/plain" class="language-html">
+          <button type="button" class="btn btn-primary btn-rounded"><i class="fal fa-duck"></i></button>
+
+          <button type="button" class="btn btn-secondary btn-rounded"><i class="fal fa-duck"></i></button>
+
+          <button type="button" class="btn btn-primary btn-icon"><i class="fal fa-duck"></i>With icon</button>
+
+          <button type="button" class="btn btn-secondary btn-icon"><i class="fal fa-duck"></i>With icon</button>
+        </script>
+      </section>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

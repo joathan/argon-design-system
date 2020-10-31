@@ -1,0 +1,164 @@
+{% extends "layout.njk" %} {% block content %}
+
+<main class="style-guide style-guide-badges p-4" role="main">
+  <header>
+    <div class="ct-page-title">
+      <h1 class="ct-title" id="content">Badges</h1>
+    </div>
+    <p class="ct-lead">
+      Documentation and examples for badges, our small count and labeling component.
+    </p>
+  </header>
+  <hr />
+  <h3 id="examples">Examples</h3>
+  <div class="ct-example">
+    <ul class="nav nav-tabs-code" id="badges-tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="badges-component-tab" data-toggle="tab" href="#badges-component" role="tab" aria-controls="badges-component" aria-selected="true">Result</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="badges-html-tab" data-toggle="tab" href="#badges-html" role="tab" aria-controls="badges-html" aria-selected="false">HTML</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <section id="badges-component" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="badges-component-tab">
+        <div class="p-2">
+          <span class="badge badge-default">Default</span>
+          <span class="badge badge-primary">Primary</span>
+          <span class="badge badge-secondary">Secondary</span>
+          <span class="badge badge-info">Info</span>
+          <span class="badge badge-success">Success</span>
+          <span class="badge badge-danger">Danger</span>
+          <span class="badge badge-warning">Warning</span>
+        </div>
+      </section>
+
+      <section id="badges-html" class="tab-pane fade tab-example-result-html" role="tabpanel" aria-labelledby="badges-html-tab">
+        <script type="text/plain" class="language-html">
+          <span class="badge badge-default">Default</span>
+          <span class="badge badge-primary">Primary</span>
+          <span class="badge badge-secondary">Secondary</span>
+          <span class="badge badge-info">Info</span>
+          <span class="badge badge-success">Success</span>
+          <span class="badge badge-danger">Danger</span>
+          <span class="badge badge-warning">Warning</span>
+        </script>
+      </section>
+    </div>
+  </div>
+
+  <h3 id="examples">Links with Hover</h3>
+  <div class="ct-example">
+    <ul class="nav nav-tabs-code" id="badges-link-tab" role="dark-tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="badges-link-component-tab" data-toggle="tab" href="#badges-link-component" role="tab" aria-controls="badges-link-component" aria-selected="true">Result</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="badges-link-html-tab" data-toggle="tab" href="#badges-link-html" role="tab" aria-controls="badges-link-html" aria-selected="false">HTML</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <section id="badges-link-component" class="tab-pane tab-example-result-link fade show active" role="dark-tabpanel" aria-labelledby="badges-link-component-tab">
+        <div class="p-2">
+          <a href="#" class="badge badge-default">Default</a>
+          <a href="#" class="badge badge-primary">Primary</a>
+          <a href="#" class="badge badge-secondary">Secondary</a>
+          <a href="#" class="badge badge-info">Info</a>
+          <a href="#" class="badge badge-success">Success</a>
+          <a href="#" class="badge badge-danger">Danger</a>
+          <a href="#" class="badge badge-warning">Warning</a>
+        </div>
+      </section>
+
+      <section id="badges-link-html" class="tab-pane tab-example-result-html fade" role="dark-tabpanel" aria-labelledby="badges-link-html-tab">
+        <script type="text/plain" class="language-html">
+          <a href="#" class="badge badge-default">Default</a>
+          <a href="#" class="badge badge-primary">Primary</a>
+          <a href="#" class="badge badge-secondary">Secondary</a>
+          <a href="#" class="badge badge-info">Info</a>
+          <a href="#" class="badge badge-success">Success</a>
+          <a href="#" class="badge badge-danger">Danger</a>
+          <a href="#" class="badge badge-warning">Warning</a>
+        </script>
+      </section>
+    </div>
+  </div>
+
+  <h3 id="examples">Outline</h3>
+  <div class="ct-example">
+    <ul class="nav nav-tabs-code" id="badges-link-tab" role="dark-tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="badges-component-tab" data-toggle="tab" href="#badges-outline-component" role="tab" aria-controls="badges-link-component" aria-selected="true">Result</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="badges-outline-html-tab" data-toggle="tab" href="#badges-outline-html" role="tab" aria-controls="badges-outline-html" aria-selected="false">HTML</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <section id="badges-outline-component" class="tab-pane tab-example-result-link fade show active" role="dark-tabpanel" aria-labelledby="badges-link-component-tab">
+        <div class="p-2">
+          <span class="badge badge-outline-default">Default</span>
+          <span class="badge badge-outline-primary">Primary</span>
+          <span class="badge badge-outline-secondary">Secondary</span>
+          <span class="badge badge-outline-info">Info</span>
+          <span class="badge badge-outline-success">Success</span>
+          <span class="badge badge-outline-danger">Danger</span>
+          <span class="badge badge-outline-warning">Warning</span>
+        </div>
+      </section>
+
+      <section id="badges-outline-html" class="tab-pane tab-example-result-html fade" role="dark-tabpanel" aria-labelledby="badges-link-html-tab">
+        <script type="text/plain" class="language-html">
+          <span class="badge badge-outline-default">Default</span>
+          <span class="badge badge-outline-primary">Primary</span>
+          <span class="badge badge-outline-secondary">Secondary</span>
+          <span class="badge badge-outline-info">Info</span>
+          <span class="badge badge-outline-success">Success</span>
+          <span class="badge badge-outline-danger">Danger</span>
+          <span class="badge badge-outline-warning">Warning</span>
+        </script>
+      </section>
+    </div>
+  </div>
+
+  <h3 id="examples">Links Outline with Hover</h3>
+  <div class="ct-example">
+    <ul class="nav nav-tabs-code" id="badges-link-tab" role="dark-tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="badges-link-outline-component-tab" data-toggle="tab" href="#badges-link-outline-component" role="tab" aria-controls="badges-link-component" aria-selected="true">
+          Result
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="badges-link-outline-html-tab" data-toggle="tab" href="#badges-link-outline-html" role="tab" aria-controls="badges-link-html" aria-selected="false">HTML</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <section id="badges-link-outline-component" class="tab-pane tab-example-result-link fade show active" role="dark-tabpanel" aria-labelledby="badges-link-component-tab">
+        <div class="p-2">
+          <a href="#" class="badge badge-outline-default">Default</a>
+          <a href="#" class="badge badge-outline-primary">Primary</a>
+          <a href="#" class="badge badge-outline-secondary">Secondary</a>
+          <a href="#" class="badge badge-outline-info">Info</a>
+          <a href="#" class="badge badge-outline-success">Success</a>
+          <a href="#" class="badge badge-outline-danger">Danger</a>
+          <a href="#" class="badge badge-outline-warning">Warning</a>
+        </div>
+      </section>
+
+      <section id="badges-link-outline-html" class="tab-pane tab-example-result-html fade" role="dark-tabpanel" aria-labelledby="badges-link-html-tab">
+        <script type="text/plain" class="language-html">
+          <a href="#" class="badge badge-outline-default">Default</a>
+          <a href="#" class="badge badge-outline-primary">Primary</a>
+          <a href="#" class="badge badge-outline-secondary">Secondary</a>
+          <a href="#" class="badge badge-outline-info">Info</a>
+          <a href="#" class="badge badge-outline-success">Success</a>
+          <a href="#" class="badge badge-outline-danger">Danger</a>
+          <a href="#" class="badge badge-outline-warning">Warning</a>
+        </script>
+      </section>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

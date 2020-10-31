@@ -1,0 +1,27 @@
+.alert-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 23px;
+
+  .alert-content {
+    i {
+      margin-right: 10px;
+    }
+
+    span {
+      font-weight: 300;
+
+      strong {
+        font-weight: 500;
+      }
+    }
+  }
+
+  .btn {
+    &:hover {
+      transform: none;
+      box-shadow: none;
+    }
+  }
+}

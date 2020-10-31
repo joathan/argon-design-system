@@ -1,0 +1,45 @@
+.card {
+  -webkit-box-shadow: 0 0 16px 0 rgba(136, 152, 170, 0.15);
+  -moz-box-shadow: 0 0 16px 0 rgba(136, 152, 170, 0.15);
+  box-shadow: 0 0 16px 0 rgba(136, 152, 170, 0.15);
+
+  .card-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+
+    .card-title {
+      font-size: $font-size-lg;
+      margin-bottom: 0;
+    }
+  }
+
+  .card-body {
+    &.card-body-list {
+      padding: 0;
+    }
+  }
+
+  > hr {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  > .list-group:first-child {
+    .list-group-item:first-child {
+      @include border-top-radius($card-border-radius);
+    }
+  }
+
+  > .list-group:last-child {
+    .list-group-item:last-child {
+      @include border-bottom-radius($card-border-radius);
+    }
+  }
+}
+@include media-breakpoint-up(md) {
+  .post-list {
+    max-height: 600px;
+    .card-body-list {
+      overflow-y: auto;
+    }
+  }
+}

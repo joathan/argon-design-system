@@ -1,0 +1,269 @@
+/*! FONT IMPORTS */
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+
+// COLORS
+$default: #d2e3ee !default;
+$primary: #35245c !default;
+$primary-alt: #ff7101 !default;
+$primary-pale: #534377 !default;
+$secondary: #5a6169 !default;
+$info: #00a5df !default;
+$success: #17c671 !default;
+$danger: #dc3545 !default;
+$warning: #ffb402 !default;
+
+$primary-light: #eaecf5 !default;
+$primary-alt-light: #ffe3cd !default;
+$secondary-light: #e8e9eb !default;
+$info-light: #cef2ff !default;
+$success-light: #d1fae6 !default;
+$danger-light: #f8d4d8 !default;
+$warning-light: #fff0ce !default;
+
+$primary-light-300: #f6fafc !default;
+
+$gray-600: #757575 !default;
+$gray: $gray-600 !default;
+
+$facebook: #3b5998 !default;
+$twitter: #1da1f2 !default;
+$instagram: #c13584 !default;
+$whatsapp: #25d366 !default;
+
+$violet: #eaecf5 !default;
+$ghost-white: #f8f9fe !default;
+$night-rider: #353535 !default;
+$zambezi: #5c5c5c !default;
+$gainsboro: #d8d8d8 !default;
+$purple: #8965e0 !default;
+$cyan: #2bffc6 !default;
+
+// custom
+$pale-grey: #f9fafb;
+
+// export to use in js
+:export {
+  default: $default;
+  primary: $primary;
+  primary-alt: $primary-alt;
+  primary-pale: $primary-pale;
+  secondary: $secondary;
+  info: $info;
+  success: $success;
+  danger: $danger;
+  warning: $warning;
+
+  primary-light: $primary-light;
+  primary-light-300: $primary-light-300;
+  primary-alt-light: $primary-alt-light;
+  secondary-light: $secondary-light;
+  info-light: $info-light;
+  success-light: $success-light;
+  danger-light: $danger-light;
+  warning-light: $warning-light;
+
+  facebook: $facebook;
+  twitter: $twitter;
+  instagram: $instagram;
+  whatsapp: $whatsapp;
+
+  violet: $violet;
+  ghost-white: $ghost-white;
+  night-rider: $night-rider;
+  zambezi: $zambezi;
+  gainsboro: $gainsboro;
+  pale-grey: $pale-grey;
+  purple: $purple;
+  cyan: $cyan;
+}
+
+$theme-colors: (
+  "default": $default,
+  "primary": $primary,
+  "primary-alt": $primary-alt,
+  "primary-pale": $primary-pale,
+  "secondary": $secondary,
+  "info": $info,
+  "success": $success,
+  "danger": $danger,
+  "warning": $warning,
+  "primary-light": $primary-light,
+  "primary-light-300": $primary-light-300,
+  "primary-alt-light": $primary-alt-light,
+  "secondary-light": $secondary-light,
+  "info-light": $info-light,
+  "success-light": $success-light,
+  "danger-light": $danger-light,
+  "warning-light": $warning-light,
+  "facebook": $facebook,
+  "twitter": $twitter,
+  "instagram": $instagram,
+  "whatsapp": $whatsapp,
+  "violet": $violet,
+  "ghost-white": $ghost-white,
+  "night-rider": $night-rider,
+  "zambezi": $zambezi,
+  "gainsboro": $gainsboro,
+  "pale-grey": $pale-grey,
+  "purple": $purple,
+  "cyan": $cyan
+) !default;
+
+$body-bg: $ghost-white !default;
+$body-color: $night-rider !default;
+$text-muted: #9ba8b7 !default;
+
+// TYPOGRAPHY
+// Sizes
+$font-size-root: 14px;
+
+$font-size-base: 1rem; // 14px
+$font-size-xxl: 1.429rem; // 20px
+$font-size-xl: 1.286rem; // 18px
+$font-size-lg: 1.143rem; // 16px
+$font-size-md: $font-size-base;
+$font-size-sm: 0.8571rem; // 12px
+$font-size-xs: 0.7143rem; // 10px
+
+$h1-font-size: 2.571428571rem; // 36px (with 14px base)
+$h2-font-size: 2.142857142rem; // 30px (with 14px base)
+$h3-font-size: 1.857142857rem; // 26px (with 14px base)
+$h4-font-size: 1.571428571rem; // 22px (with 14px base)
+$h5-font-size: 1.285714286rem; // 18px (with 14px base)
+$h6-font-size: 1rem;
+
+// Base Typography
+$font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+  sans-serif;
+
+// Headings Typography
+$headings-font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+  sans-serif;
+$headings-font-weight: 600;
+$headings-color: $primary !default;
+
+// Heading Typography
+$heading-letter-spacing: normal;
+$heading-font-size: 1.143rem;
+$heading-text-transform: none;
+
+$heading-title-letter-spacing: normal;
+$heading-title-font-size: 1.571rem;
+$heading-title-text-transform: none;
+
+$heading-section-letter-spacing: normal;
+$heading-section-font-size: 1.571rem;
+$heading-section-text-transform: none;
+
+// Paragraphs
+$paragraph-font-weight: normal;
+$paragraph-line-height: 1.5;
+
+// CONTAINER INTRO GRID
+// Define the maximum width of `.container-intro` for different screen sizes.
+$container-intro-max-widths: (
+  sm: 400px,
+  md: 400px,
+  lg: 400px,
+  xl: 400px
+);
+
+// GRID SYSTEM
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1340px
+);
+
+// MODALS
+// Sizes
+$modal-lg: 850px;
+$modal-md: 550px;
+$modal-sm: 350px;
+$modal-xl: 1000px;
+
+// Design
+$modal-inner-padding: 1.071rem;
+$modal-backdrop-opacity: 0.85;
+$modal-content-border-width: 1px;
+
+$modal-header-border-color: $gainsboro;
+$modal-header-border-width: $modal-content-border-width;
+$modal-header-padding: 1.071rem;
+$modal-title-line-height: 1.5;
+
+$modal-footer-border-color: $modal-header-border-color;
+$modal-footer-padding-y: 0.8571rem;
+$modal-footer-padding-x: 1.071rem;
+
+// DROPDOWN
+$dropdown-link-hover-bg: $primary-light-300;
+
+// BORDER RADIUS SIZES
+$border-radius: 0.2857rem; // 4px
+$border-radius-sm: 0.2857rem; // 4px
+$border-radius-lg: 0.2857rem; // 4px
+$border-radius-xl: 0.2857rem; // 4px
+
+// FORMS
+$input-color: $body-color;
+$input-border-color: #97a5ba;
+$input-placeholder-color: #8898aa;
+$input-focus-border-color: $primary;
+
+// Forms
+// Font Size
+$input-btn-font-size: 1rem; // 14px
+$input-btn-font-size-sm: 0.8571rem; // 12px
+$input-btn-font-size-lg: 1.143rem; // 16px
+
+// Spacing
+$input-btn-padding-y: 0.7143rem; // 10px
+$input-btn-padding-x: 1rem; // 14px
+
+$input-btn-padding-y-sm: 0.5714rem; // 8px
+$input-btn-padding-x-sm: 0.8571rem; // 12px
+
+$input-btn-padding-y-lg: 0.8571rem; // 12px
+$input-btn-padding-x-lg: 1.143rem; // 16px
+
+// Form Group
+$form-group-margin-bottom: 15px;
+
+// BUTTONS
+$btn-box-shadow: none;
+$btn-letter-spacing: 0;
+$btn-padding-y-sm: $input-btn-padding-y-sm;
+$btn-padding-y-lg: $input-btn-padding-y-lg;
+
+// ALERTS
+$alert-bg-level: 0;
+$alert-border-level: 0;
+
+// TOOLTIP
+$tooltip-bg: rgba(0, 0, 0, 0.85);
+$tooltip-arrow-color: rgba(0, 0, 0, 0.85);
+
+// NAVBAR VERTICAL
+$navbar-nav-link-font-size: 1rem;
+
+// TABLES
+$table-bg: #fff;
+
+$table-head-font-size: 1rem; // 14px
+$table-head-text-transform: none;
+$table-head-letter-spacing: normal;
+
+$table-body-font-size: 1rem; // 14px

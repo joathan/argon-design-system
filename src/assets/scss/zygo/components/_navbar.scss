@@ -1,0 +1,18 @@
+#navbar-main {
+  background-color: #fff;
+  padding: 8px 0;
+  border-bottom: solid thin rgba(0, 0, 0, 0.1);
+  display: none;
+
+  .navbar-container {
+    @include make-container();
+    @include make-container-max-widths();
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 992px) {
+    display: flex;
+  }
+}

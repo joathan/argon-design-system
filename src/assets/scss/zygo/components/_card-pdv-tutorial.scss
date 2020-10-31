@@ -1,0 +1,91 @@
+.card {
+  &.card-pdv-tutorial {
+    margin-bottom: 15px;
+
+    .card-body {
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      counter-reset: how-to-use;
+
+      .how-to-use-item {
+        width: calc(100% / 3);
+        border-right: 1px solid rgba(0, 0, 0, 0.125);
+        padding: 40px 15px;
+        text-align: center;
+        position: relative;
+
+        i {
+          font-size: 40px;
+          color: $primary-alt;
+        }
+
+        img {
+          max-height: 55px;
+        }
+
+        .item-text {
+          margin-top: 10px;
+          font-weight: 700;
+
+          h5,
+          p {
+            margin-bottom: 0;
+          }
+
+          @media (max-width: 768px - 1px) {
+            font-size: 0.9rem;
+          }
+        }
+
+        &:before {
+          position: absolute;
+          top: 5px;
+          left: 15px;
+          counter-increment: how-to-use;
+          content: counter(how-to-use);
+          font-size: 1.6rem;
+          font-weight: 700;
+          opacity: 0.3;
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+          border-right: 0;
+        }
+
+        @media (max-width: 768px - 1px) {
+          width: 100%;
+          border-right: 0;
+          border-top: 0;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+        }
+      }
+    }
+  }
+
+  &.card-pdv-access {
+    .card-body {
+      @media (max-width: 530px) {
+        flex-wrap: wrap;
+
+        .pdv-store-code,
+        .pdv-access-action {
+          width: 100%;
+        }
+
+        .pdv-store-code {
+          margin-bottom: 15px;
+        }
+
+        .pdv-access-action {
+          text-align: center;
+        }
+      }
+    }
+  }
+}

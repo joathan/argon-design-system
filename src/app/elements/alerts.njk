@@ -1,0 +1,607 @@
+{% extends "layout.njk" %} {% block content %}
+
+<main class="p-4" role="main">
+  <header>
+    <div class="ct-page-title">
+      <h1 class="ct-title" id="content">{{ page.alerts.header.title }}</h1>
+    </div>
+    <p class="ct-lead">Descrição do componente</p>
+  </header>
+
+  <hr />
+
+  <h3 id="examples">Regular</h3>
+  <div class="ct-example">
+    <ul class="nav nav-tabs-code" id="tab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="component-tab" data-toggle="tab" href="#component" role="tab" aria-controls="component" aria-selected="true">Result</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="html-tab" data-toggle="tab" href="#html" role="tab" aria-controls="html" aria-selected="false">HTML</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <section id="component" class="tab-pane tab-example-result fade show active" role="tabpanel" aria-labelledby="component-tab">
+        <div class="p-2">
+          <div class="alert alert-default" role="alert">
+            Default! This is a default alert—check it out!
+          </div>
+
+          <br />
+
+          <div class="alert alert-primary" role="alert">
+            Primary! This is a primary alert—check it out!
+          </div>
+
+          <br />
+
+          <div class="alert alert-secondary" role="alert">
+            Secondary! This is a secondary alert—check it out!
+          </div>
+
+          <br />
+
+          <div class="alert alert-info" role="alert">
+            Info! This is a info alert—check it out!
+          </div>
+
+          <br />
+
+          <div class="alert alert-success" role="alert">
+            Success! This is a success alert—check it out!
+          </div>
+
+          <br />
+
+          <div class="alert alert-danger" role="alert">
+            Danger! This is a danger alert—check it out!
+          </div>
+
+          <br />
+
+          <div class="alert alert-warning" role="alert">
+            Warning! This is a warning alert—check it out!
+          </div>
+        </div>
+      </section>
+
+      <section id="html" class="tab-pane fade tab-example-result-html" role="tabpanel" aria-labelledby="html-tab">
+        <script type="text/plain" class="language-html">
+          <div class="alert alert-default" role="alert">
+            Default! This is a default alert—check it out!
+          </div>
+
+          <div class="alert alert-primary" role="alert">
+            Primary! This is a primary alert—check it out!
+          </div>
+
+          <div class="alert alert-secondary" role="alert">
+            Secondary! This is a secondary alert—check it out!
+          </div>
+
+          <div class="alert alert-info" role="alert">
+            Info! This is a info alert—check it out!
+          </div>
+
+          <div class="alert alert-success" role="alert">
+            Success! This is a success alert—check it out!
+          </div>
+
+          <div class="alert alert-danger" role="alert">
+            Danger! This is a danger alert—check it out!
+          </div>
+
+          <div class="alert alert-warning" role="alert">
+            Warning! This is a warning alert—check it out!
+          </div>
+        </script>
+      </section>
+    </div>
+  </div>
+
+  <h3 id="examples">With Icon</h3>
+  <div class="ct-example">
+    <ul class="nav nav-tabs-code" id="icon-tab" role="icon-tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="icon-component-tab" data-toggle="tab" href="#icon-component" role="tab" aria-controls="icon-component" aria-selected="true">Result</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="icon-html-tab" data-toggle="tab" href="#icon-html" role="tab" aria-controls="icon-html" aria-selected="false">HTML</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <section id="icon-component" class="tab-pane tab-example-result fade show active" role="icon-tabpanel" aria-labelledby="icon-component-tab">
+        <div class="p-2">
+          <div class="alert alert-default" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">
+              Default! This is a default alert—check it out that has an icon too!
+            </span>
+          </div>
+
+          <br />
+
+          <div class="alert alert-primary" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">
+              Primary! This is a primary alert—check it out that has an icon too!
+            </span>
+          </div>
+
+          <br />
+
+          <div class="alert alert-info" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">
+              Info! This is a info alert—check it out that has an icon too!
+            </span>
+          </div>
+
+          <br />
+
+          <div class="alert alert-success" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">
+              Success! This is a success alert—check it out that has an icon too!
+            </span>
+          </div>
+
+          <br />
+
+          <div class="alert alert-danger" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">
+              Danger! This is a danger alert—check it out that has an icon too!
+            </span>
+          </div>
+
+          <br />
+
+          <div class="alert alert-warning" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">
+              Warning! This is a warning alert—check it out that has an icon too!
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <section id="icon-html" class="tab-pane tab-example-result-html fade" role="icon-tabpanel" aria-labelledby="icon-html-tab">
+        <script type="text/plain" class="language-html">
+
+          <div class="alert alert-default" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">
+            Default! This is a default alert—check it out that has an icon too!
+            </span>
+          </div>
+
+          <div class="alert alert-primary" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">
+            Primary! This is a primary alert—check it out that has an icon too!
+            </span>
+          </div>
+
+          <div class="alert alert-info" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">
+            Info! This is a info alert—check it out that has an icon too!
+            </span>
+          </div>
+
+          <div class="alert alert-success" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">
+            Success! This is a success alert—check it out that has an icon too!
+            </span>
+          </div>
+
+          <div class="alert alert-danger" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">
+            Danger! This is a danger alert—check it out that has an icon too!
+            </span>
+          </div>
+
+          <div class="alert alert-warning" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">
+            Warning! This is a warning alert—check it out that has an icon too!
+            </span>
+          </div>
+        </script>
+      </section>
+    </div>
+  </div>
+
+  <h3 id="examples">Dismissible</h3>
+  <div class="ct-example">
+    <ul class="nav nav-tabs-code" id="dismissible-tab" role="dismissible-tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="dismissible-component-tab" data-toggle="tab" href="#dismissible-component" role="tab" aria-controls="dismissible-component" aria-selected="true">Result</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="dismissible-html-tab" data-toggle="tab" href="#dismissible-html" role="tab" aria-controls="dismissible-html" aria-selected="false">HTML</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <section id="dismissible-component" class="tab-pane tab-example-result fade show active" role="dismissible-tabpanel" aria-labelledby="dismissible-component-tab">
+        <div class="p-2">
+          <div class="alert alert-default alert-dismissible fade show" role="alert">
+            <span class="alert-text">Default! This is a default alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <br />
+
+          <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            <span class="alert-text">Primary! This is a primary alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <br />
+
+          <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+            <span class="alert-text">Secondary! This is a secondary alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <br />
+
+          <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <span class="alert-text">Info! This is a info alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <br />
+
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <span class="alert-text">Success! This is a success alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <br />
+
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <span class="alert-text">Danger! This is a danger alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <br />
+
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <span class="alert-text">Warning! This is a warning alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="dismissible-html" class="tab-pane tab-example-result-html fade" role="dismissible-tabpanel" aria-labelledby="dismissible-html-tab">
+        <script type="text/plain" class="language-html">
+
+          <div class="alert alert-default alert-dismissible fade show" role="alert">
+            <span class="alert-text">Default! This is a default alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            <span class="alert-text">Primary! This is a primary alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+            <span class="alert-text">Secondary! This is a secondary alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <span class="alert-text">Info! This is a info alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <span class="alert-text">Success! This is a success alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <span class="alert-text">Danger! This is a danger alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <span class="alert-text">Warning! This is a warning alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+        </script>
+      </section>
+    </div>
+  </div>
+
+  <h3 id="examples">Dismissible With Icon</h3>
+  <div class="ct-example">
+    <ul class="nav nav-tabs-code" id="dismissible-icon-tab" role="dismissible-icon-tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="dismissible-icon-component-tab" data-toggle="tab" href="#dismissible-icon-component" role="tab" aria-controls="dismissible-icon-component" aria-selected="true">
+          Result
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="dismissible-icon-html-tab" data-toggle="tab" href="#dismissible-icon-html" role="tab" aria-controls="dismissible-icon-html" aria-selected="false">HTML</a>
+      </li>
+    </ul>
+    <div class="tab-content">
+      <section id="dismissible-icon-component" class="tab-pane tab-example-result fade show active" role="dismissible-icon-tabpanel" aria-labelledby="dismissible-icon-component-tab">
+        <div class="p-2">
+          <div class="alert alert-default alert-dismissible fade show" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">Default! This is a default alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <br />
+
+          <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">Primary! This is a primary alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <br />
+
+          <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">Secondary! This is a secondary alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <br />
+
+          <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">Info! This is a info alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <br />
+
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">Success! This is a success alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <br />
+
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">Danger! This is a danger alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <br />
+
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">Warning! This is a warning alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="dismissible-icon-html" class="tab-pane tab-example-result-html fade" role="dismissible-icon-tabpanel" aria-labelledby="dismissible-icon-html-tab">
+        <script type="text/plain" class="language-html">
+
+          <div class="alert alert-default alert-dismissible fade show" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">Default! This is a default alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <div class="alert alert-primary alert-dismissible fade show" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">Primary! This is a primary alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <div class="alert alert-secondary alert-dismissible fade show" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">Secondary! This is a secondary alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <div class="alert alert-info alert-dismissible fade show" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">Info! This is a info alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">Success! This is a success alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">Danger! This is a danger alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+
+          <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <div class="alert-icon">
+              <i class="fas fa-thumbs-up"></i>
+            </div>
+            <span class="alert-text">Warning! This is a warning alert—check it out!</span>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">
+                <i class="fas fa-times"></i>
+              </span>
+            </button>
+          </div>
+        </script>
+      </section>
+    </div>
+  </div>
+</main>
+
+{% endblock %}

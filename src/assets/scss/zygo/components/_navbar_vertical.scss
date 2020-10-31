@@ -1,0 +1,244 @@
+.navbar {
+  &.navbar-vertical {
+    background-color: #fff;
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.15) !important;
+    z-index: 100;
+    padding: 0;
+
+    .navbar-header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px;
+
+      .navbar-header-section {
+        width: calc((100% / 3) - 16px);
+
+        &.section-brand {
+          text-align: center;
+        }
+
+        &:last-child {
+          text-align: right;
+        }
+
+        @media (min-width: 992px) {
+          width: auto;
+
+          &:first-child {
+            display: none;
+          }
+        }
+      }
+
+      .navbar-toggle-layout {
+        @extend .btn;
+        @extend .btn-link;
+        @extend .btn-icon;
+        @extend .btn-icon-only;
+        display: none;
+        width: auto;
+        line-height: 1;
+        position: relative;
+        top: -10px;
+        margin-right: 0 !important;
+        opacity: 0.5;
+
+        i {
+          margin-right: 0;
+        }
+
+        &:hover {
+          opacity: 1;
+        }
+
+        @media (min-width: 992px) {
+          display: block;
+        }
+      }
+
+      .navbar-brand {
+        padding: 0;
+
+        .navbar-brand-img {
+          height: 50px;
+          max-width: 100%;
+          max-height: inherit;
+        }
+      }
+
+      .dropdown-user-menu {
+        display: inline-block;
+        margin-left: auto;
+
+        .dropdown {
+          > a {
+            .media {
+              .media-body {
+                display: none;
+              }
+            }
+
+            &:after {
+              margin-left: 4px;
+            }
+          }
+        }
+        @media (min-width: 992px) {
+          display: none;
+        }
+      }
+    }
+
+    .navbar-collapse {
+      margin: 0;
+      padding: 0;
+
+      .navbar-collapse-header {
+        display: none;
+        width: 100%;
+        align-items: center;
+        padding: 16px;
+
+        .navbar-brand {
+          padding: 0;
+
+          .navbar-brand-img {
+            height: 50px;
+            max-width: 100%;
+            max-height: inherit;
+          }
+        }
+
+        .navbar-header-section {
+          width: calc(100% / 3);
+
+          &.section-brand {
+            text-align: center;
+          }
+        }
+
+        .navbar-toggler {
+          i {
+            transform: none;
+          }
+        }
+      }
+
+      .navbar-heading {
+        font-family: $font-family-sans-serif;
+        font-size: 13px;
+        font-weight: 600;
+        text-transform: none;
+        color: $primary;
+        margin-top: 14px;
+        margin-bottom: 0;
+        padding: 0 16px;
+      }
+
+      hr {
+        margin: 15px 0;
+      }
+
+      .navbar-nav {
+        margin: 0;
+
+        .nav-item {
+          .nav-link {
+            padding: 10px 16px;
+            color: $gray-600;
+            transition: all 300ms;
+
+            i {
+              min-width: inherit;
+              width: 25px;
+              margin-right: 10px;
+              font-weight: 300;
+              font-size: 1.071rem;
+              line-height: 1;
+              transition: all 300ms;
+
+              &[class*="lock"] {
+                font-weight: 700;
+                margin-left: auto;
+                margin-right: 0;
+                color: $primary;
+              }
+            }
+
+            span {
+              line-height: 1.4;
+              display: inline-block;
+              margin-right: 10px;
+            }
+
+            &[data-toggle="collapse"] {
+              &:after {
+                font-family: "Font Awesome 5 Pro";
+              }
+            }
+
+            &:hover {
+              color: $primary;
+            }
+          }
+
+          ul {
+            background-color: #f6f7f9;
+            list-style: none;
+            padding: 10px 0 10px 30px;
+
+            .nav-item {
+              &.active {
+                > .nav-link {
+                  color: $primary;
+                  font-weight: 700;
+
+                  i {
+                    font-weight: 500;
+                  }
+
+                  &:before {
+                    content: none;
+                  }
+                }
+              }
+            }
+          }
+
+          &.active {
+            > .nav-link {
+              color: $primary;
+              font-weight: 700;
+
+              i {
+                font-weight: 500;
+              }
+
+              &:before {
+                content: none;
+              }
+            }
+          }
+        }
+      }
+
+      &:before {
+        content: none;
+      }
+
+      @media (max-width: 991px) {
+        position: fixed;
+        top: 0;
+        left: 0%;
+        width: 100vw;
+        height: 100vh !important;
+
+        .navbar-collapse-header {
+          display: flex;
+        }
+      }
+    }
+  }
+}

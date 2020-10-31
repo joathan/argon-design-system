@@ -1,0 +1,347 @@
+{% extends "layout.njk" %} {% block content %} {% include "partials/header.njk" %}
+
+<div id="content-main">
+  <div class="container">
+    <section class="card card-list-stats">
+      <div class="card-header">
+        <h3 class="title title-sm">
+          Indicadores do seu restaurante
+        </h3>
+      </div>
+
+      <div class="card-body">
+        <div class="list-stats-group">
+          <div class="stats-group-item">
+            <div class="stats-group-item-title">
+              Meu site
+            </div>
+            <div class="stats-group-item-container">
+              <div class="card card-stats card-stats-primary">
+                <div class="card-content">
+                  <h4 class="stats-title">
+                    Número de visitas no mês
+                  </h4>
+                  <h2 class="stats-value">
+                    17.894
+                  </h2>
+
+                  <p class="stats-datetime">Últimos 30 dias</p>
+                </div>
+                <div class="card-icon">
+                  <i class="fas fa-analytics"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats-group-item">
+            <div class="stats-group-item-title">
+              Programa de Fidelidade
+            </div>
+            <div class="stats-group-item-container">
+              <div class="card card-stats card-stats-primary">
+                <div class="card-content">
+                  <h4 class="stats-title">
+                    Número de visitas no mês
+                  </h4>
+                  <h2 class="stats-value">
+                    17.894
+                  </h2>
+
+                  <p class="stats-datetime">Últimos 30 dias</p>
+                </div>
+                <div class="card-icon">
+                  <i class="fas fa-analytics"></i>
+                </div>
+              </div>
+              <div class="card card-stats card-stats-primary">
+                <div class="card-content">
+                  <h4 class="stats-title">
+                    Número de visitas no mês
+                  </h4>
+                  <h2 class="stats-value">
+                    17.894
+                  </h2>
+
+                  <p class="stats-datetime">Últimos 30 dias</p>
+                </div>
+                <div class="card-icon">
+                  <i class="fas fa-analytics"></i>
+                </div>
+              </div>
+              <div class="card card-stats card-stats-primary">
+                <div class="card-content">
+                  <h4 class="stats-title">
+                    Número de visitas no mês
+                  </h4>
+                  <h2 class="stats-value">
+                    17.894
+                  </h2>
+
+                  <p class="stats-datetime">Últimos 30 dias</p>
+                </div>
+                <div class="card-icon">
+                  <i class="fas fa-analytics"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card card-onboard">
+      <div class="card-header">
+        <h3 class="title title-sm">
+          Siga esses passos para iniciar sua jornada de crescimento.
+        </h3>
+      </div>
+      <div class="row m-0">
+        <div class="col-3 p-0">
+          <div class="nav nav-onboard flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link nav-link-onboard nav-link-complete" id="v-pills-intro-tab" data-toggle="pill" href="#v-pills-intro" role="tab" aria-controls="v-pills-intro" aria-selected="false">
+              Introdução ao Zygo
+              <i class="far fa-check-circle align-self-center nav-icon"></i>
+            </a>
+            <a class="nav-link nav-link-onboard active" id="v-pills-engage-tab" data-toggle="pill" href="#v-pills-engage" role="tab" aria-controls="v-pills-engage" aria-selected="true">
+              Engajar
+            </a>
+            <a class="nav-link nav-link-onboard" id="v-pills-communicate-tab" data-toggle="pill" href="#v-pills-communicate" role="tab" aria-controls="v-pills-communicate" aria-selected="false">
+              Comunicar
+            </a>
+            <a class="nav-link nav-link-onboard disabled" id="v-pills-relate-tab" data-toggle="pill" href="#v-pills-relate" role="tab" aria-controls="v-pills-relate" aria-selected="false">
+              Relacionar
+              <i class="fal fa-lock"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-9 px-4">
+          <div class="tab-content tab-content-onboard" id="v-pills-tabContent">
+            <div class="tab-pane fade" id="v-pills-intro" role="tabpanel" aria-labelledby="v-pills-intro-tab">
+              <div class="onboard-content">
+                <div class="content-header pt-4 pb-4">
+                  <h2 class="m-0 title title-lg">Introdução ao Zygo</h2>
+                  <span>
+                    Somos uma ferramenta de marketing e vamos ajudar o seu restaurante a crescer, tomando o mínimo do seu tempo e sem exigir que você seja especialista em marketing.
+                  </span>
+                </div>
+                <div class="content-body pt-3 d-flex flex-wrap align-center mb-4">
+                  <h3 class="w-100 title title-md">Você começa:</h3>
+                  <ul class="content-list p-0 col-7">
+                    <li class="content-item">
+                      <span class="list-mark"></span>
+                      Engajando com seus clientes, criando o seu o próprio Site e o seu Programa de Fidelidade, de maneira simples e rápida.
+                    </li>
+                    <li class="content-item">
+                      <span class="list-mark"></span>
+                      Se comunicando com eles de forma inteligente, enviando SMS e Emails personalizados e automatizados.
+                    </li>
+                    <li class="content-item">
+                      <span class="list-mark"></span>
+                      E melhorando o seu relacionamento, pontuando seus clientes e recebendo avaliações sobre a experiência deles no seu restaurante.
+                    </li>
+                  </ul>
+                  <div class="content-img col-5 d-flex align-self-center">
+                    <img class="img-fluid d-block m-auto" src="../assets/img/content-image1.png" alt="" />
+                  </div>
+                </div>
+                <div class="submit d-flex justify-content-center py-5">
+                  <a href="#" class="btn btn-success">Vamos lá!</a>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade show active" id="v-pills-engage" role="tabpanel" aria-labelledby="v-pills-engage-tab">
+              <div class="onboard-content">
+                <div class="content-header py-4 content-header-icon">
+                  <div class="header-icon">
+                    <i class="far fa-smile-beam fa-3x"></i>
+                  </div>
+                  <div class="header-text">
+                    <h2 class="m-0 title title-lg">Engajar</h2>
+                    <span>
+                      Somos uma ferramenta de marketing e vamos ajudar o seu restaurante a crescer, tomando o mínimo do seu tempo e sem exigir que você seja especialista em marketing.
+                    </span>
+                  </div>
+                </div>
+                <div class="task-list pt-3 mb-4">
+                  <h3 class="title title-md">Complete essas tarefas:</h3>
+                  <div class="task-item px-4 py-3">
+                    <div class="task-number">
+                      1°
+                    </div>
+                    <div class="task-content">
+                      <div class="m-0">
+                        <h3 class="title title-sm">Crie seu site</h3>
+                      </div>
+                      <div class="task-desc">
+                        Em poucos cliques, com o seu Site criado, seus clientes podem achar seu restaurante com facilidade no Google e nas redes sociais.
+                      </div>
+                    </div>
+                    <div class="task-btn align-self-center">
+                      <a href="#" class="btn btn-success btn-block">Começar</a>
+                    </div>
+                  </div>
+                  <div class="task-item task-item-disabled px-4 py-3">
+                    <div class="task-number">
+                      2°
+                    </div>
+                    <div class="task-content">
+                      <div class="m-0">
+                        <h3 class="title title-sm">
+                          Crie seu Programa de Fidelidade
+                        </h3>
+                      </div>
+                      <div class="task-desc">
+                        Vamos te sugerir as melhores práticas que vão fazer seu cliente voltar mais vezes e se sentir recompensado por isso.
+                      </div>
+                    </div>
+                    <div class="task-btn align-self-center">
+                      <a href="#" class="btn btn-secondary btn-block disabled"><i class="fal fa-lock"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-communicate" role="tabpanel" aria-labelledby="v-pills-communicate-tab">
+              <div class="onboard-content">
+                <div class="content-header py-4 content-header-icon">
+                  <div class="header-icon">
+                    <i class="far fa-comments fa-3x"></i>
+                  </div>
+                  <div class="header-text">
+                    <h2 class="m-0 title title-lg">Comunicar</h2>
+                    <span>
+                      De forma fácil e inteligente você envia SMS e e-mails para se comunicar com seus clientes.
+                    </span>
+                  </div>
+                </div>
+                <div class="task-list pt-3 mb-4">
+                  <h3 class="title title-md">Complete essas tarefas:</h3>
+                  <div class="task-item task-item-complete px-4 py-3">
+                    <div class="task-number">
+                      1°
+                    </div>
+                    <div class="task-content">
+                      <div class="m-0">
+                        <h3 class="title title-sm">
+                          Adicione contatos de clientes
+                        </h3>
+                      </div>
+                      <div class="task-desc">
+                        Cadastre um novo contato ou importe a sua base para se comunicar com eles.
+                      </div>
+                    </div>
+                    <div class="task-btn align-self-center">
+                      <i class="far fa-check-circle"></i>
+                    </div>
+                  </div>
+                  <div class="task-item task-item-disabled px-4 py-3">
+                    <div class="task-number">
+                      2°
+                    </div>
+                    <div class="task-content">
+                      <div class="m-0">
+                        <h3 class="title title-sm">
+                          Envie uma comunicação SMS ou e-mail
+                        </h3>
+                      </div>
+                      <div class="task-desc">
+                        Em poucos cliques você consegue enviar comunicados para seus clientes convidando eles para visitar seu restaurante em dias especiais.
+                      </div>
+                    </div>
+                    <div class="task-btn align-self-center">
+                      <a href="#" class="btn btn-secondary btn-block disabled"><i class="fal fa-lock"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-relate" role="tabpanel" aria-labelledby="v-pills-relate-tab">
+              <div class="onboard-content">
+                <div class="content-header py-4 content-header-icon">
+                  <div class="header-icon">
+                    <i class="far fa-stars fa-3x"></i>
+                  </div>
+                  <div class="header-text">
+                    <h2 class="m-0 title title-lg">Relacionar</h2>
+                    <span>
+                      Aqui você começa a pontuar seus clientes e receber avaliações sobre a experiência deles no seu restaurante.
+                    </span>
+                  </div>
+                </div>
+                <div class="task-list pt-3 mb-4">
+                  <h3 class="title title-md">Complete essas tarefas:</h3>
+                  <div class="task-item px-4 py-3">
+                    <div class="task-number">
+                      1°
+                    </div>
+                    <div class="task-content">
+                      <div class="m-0">
+                        <h3 class="title title-sm">
+                          Pontue seus clientes no Programa de Fidelidade
+                        </h3>
+                      </div>
+                      <div class="task-desc">
+                        De forma fácil, você começa a pontuar e entender o comportamento dos seus clientes dentro e fora do seu restaurante.
+                      </div>
+                    </div>
+                    <div class="task-btn align-self-center">
+                      <a href="#" class="btn btn-success btn-block">Começar</a>
+                    </div>
+                  </div>
+                  <div class="task-item task-item-disabled px-4 py-3">
+                    <div class="task-number">
+                      2°
+                    </div>
+                    <div class="task-content">
+                      <div class="m-0">
+                        <h3 class="title title-sm">Responda avaliações</h3>
+                      </div>
+                      <div class="task-desc">
+                        Entenda o que o seu cliente mais gostou e como melhorar a experiência dele no seu restaurante.
+                      </div>
+                    </div>
+                    <div class="task-btn align-self-center">
+                      <a href="#" class="btn btn-secondary btn-block disabled">
+                        <i class="fal fa-lock"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-body">
+        <div class="empty-state">
+          <div class="wrapper wrapper-lg">
+            <div class="empty-state-icon">
+              <img src="https://s3.amazonaws.com/assets.zygotecnologia.com/ilustracoes/home-onboarding-welcome.svg" alt="">
+            </div>
+            <div class="empty-state-content">
+              <h2 class="empty-state-title">
+                Parabéns! Você completou as tarefas para o seu negócio crescer.
+              </h2>
+
+              <ul class="list-styled text-left">
+                <li>
+                  Com o <strong>site</strong> você se tornou visível digitalmente para os seus clientes;
+                </li>
+                <li>
+                  No <strong>programa de fidelidade</strong>, você estará trabalhando a retenção e engajamento construíndo um relacionamento;
+                </li>
+                <li>
+                  E recebendo <strong>avaliações</strong>, você conhece a opinião dos seus clientes sobre o seu negócio.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+{% endblock %}

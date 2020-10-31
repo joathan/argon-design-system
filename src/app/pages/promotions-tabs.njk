@@ -1,0 +1,598 @@
+{% extends "layout.njk" %} {% block content %} {% include "partials/header.njk" %}
+
+<main class="p-4" role="main">
+  <section class="promotions-internal-wrapper">
+    <div class="alert alert-info">
+      <div class="alert-icon">
+        <i class="far fa-2x fa-calendar"></i>
+      </div>
+      <span class="alert-text">
+        Você tem
+        <strong>8 ofertas</strong>
+        agendadas para os próximos
+        <strong>2 dias</strong>
+        .
+      </span>
+      <button class="btn btn-small btn-white btn-alert-action">
+        Ver agendadas
+      </button>
+    </div>
+
+    <div class="card card-promotions card-promotions-internal">
+      <div class="promotions-internal-tabs">
+        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-ativas-vazio-tab" data-toggle="pill" href="#pills-ativas-vazio" role="tab" aria-controls="pills-ativas-vazio" aria-selected="true">Ativas (vazio)</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-ativas-tab" data-toggle="pill" href="#pills-ativas" role="tab" aria-controls="pills-ativas" aria-selected="false">Ativas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-finalizadas-vazio-tab" data-toggle="pill" href="#pills-finalizadas-vazio" role="tab" aria-controls="pills-finalizadas-vazio" aria-selected="false">
+              Finalizadas (vazio)
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-finalizadas-tab" data-toggle="pill" href="#pills-finalizadas" role="tab" aria-controls="pills-finalizadas" aria-selected="false">Finalizadas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-agendadas-vazio-tab" data-toggle="pill" href="#pills-agendadas-vazio" role="tab" aria-controls="pills-agendadas-vazio" aria-selected="false">
+              Agendadas (vazio)
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-agendadas-tab" data-toggle="pill" href="#pills-agendadas" role="tab" aria-controls="pills-agendadas" aria-selected="false">Agendadas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-rascunhos-vazio-tab" data-toggle="pill" href="#pills-rascunhos-vazio" role="tab" aria-controls="pills-rascunhos-vazio" aria-selected="false">
+              Rascunhos (vazio)
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-rascunhos-tab" data-toggle="pill" href="#pills-rascunhos" role="tab" aria-controls="pills-rascunhos" aria-selected="false">Rascunhos</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <!-- Ativas vazio -->
+          <div class="tab-pane fade show active" id="#pills-ativas-vazio" role="tabpanel" aria-labelledby="pills-ativas-vazio-tab">
+            <div class="tab-content-promo empty">
+              <div class="empty-image">
+                <img src="../assets/img/nova-promocao.svg" alt="" />
+              </div>
+              <div class="empty-title">
+                <h2 class="title title-xl">Você não possui promoções ativas</h2>
+              </div>
+              <div class="empty-desc">
+                Todas as suas promoções criadas já foram finalizadas. Aproveite e engaje seus clientes com uma nova promoção.
+              </div>
+              <div class="empty-button">
+                <button class="btn btn-success">Criar promoções</button>
+              </div>
+            </div>
+          </div>
+          <!-- Ativas -->
+          <div class="tab-pane fade" id="pills-ativas" role="tabpanel" aria-labelledby="pills-ativas-tab">
+            <div class="tab-content-promo">
+              <div class="promo-title">
+                <h3 class="title">Aniversariantes</h3>
+              </div>
+              <div class="promos">
+                <div class="promo-item">
+                  <div class="promo-item-image">
+                    <img src="../assets/img/promo-item.png" alt="" />
+                  </div>
+                  <div class="promo-item-desc">
+                    No seu aniversário, ao comprar um hamburguer clássico, o refrigerante e as fritas são por nossa conta!
+                  </div>
+                  <div class="promo-item-indicator">
+                    <div class="promo-item-total">
+                      <span class="total-desc">Total de resgates dessa promoção</span>
+                      <span class="total-number">148</span>
+                    </div>
+                    <div class="promo-item-ticket">
+                      <span class="ticket-desc">Ticket médio dessa promoção</span>
+                      <span class="ticket-value">R$ 99.999,99</span>
+                    </div>
+                  </div>
+                  <div class="promo-item-buttons">
+                    <button class="btn btn-outline-secondary btn-rounded btn-action">
+                      <i class="fal fa-times"></i>
+                    </button>
+                    <a href="#" class="btn btn-outline-success btn-small">Ver promoção</a>
+                  </div>
+                </div>
+                <div class="promo-item">
+                  <div class="promo-item-image">
+                    <img src="../assets/img/promo-item.png" alt="" />
+                  </div>
+                  <div class="promo-item-desc">
+                    No seu aniversário, ao comprar um hamburguer clássico, o refrigerante e as fritas são por nossa conta!
+                  </div>
+                  <div class="promo-item-indicator">
+                    <div class="promo-item-total">
+                      <span class="total-desc">Total de resgates dessa promoção</span>
+                      <span class="total-number">148</span>
+                    </div>
+                    <div class="promo-item-ticket">
+                      <span class="ticket-desc">Ticket médio dessa promoção</span>
+                      <span class="ticket-value">R$ 23,80</span>
+                    </div>
+                  </div>
+                  <div class="promo-item-buttons">
+                    <button class="btn btn-outline-secondary btn-rounded btn-action">
+                      <i class="fal fa-times"></i>
+                    </button>
+                    <a href="#" class="btn btn-outline-success btn-small">Ver promoção</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content-promo">
+              <div class="promo-title">
+                <h3 class="title">Incentivar cadastro</h3>
+              </div>
+              <div class="promos">
+                <div class="promo-item">
+                  <div class="promo-item-image">
+                    <img src="../assets/img/promo-item.png" alt="" />
+                  </div>
+                  <div class="promo-item-desc">
+                    No seu aniversário, ao comprar um hamburguer clássico, o refrigerante e as fritas são por nossa conta!
+                  </div>
+                  <div class="promo-item-indicator">
+                    <div class="promo-item-total">
+                      <span class="total-desc">Total de resgates dessa promoção</span>
+                      <span class="total-number">148</span>
+                    </div>
+                    <div class="promo-item-ticket">
+                      <span class="ticket-desc">Ticket médio dessa promoção</span>
+                      <span class="ticket-value">R$ 23,80</span>
+                    </div>
+                  </div>
+                  <div class="promo-item-buttons">
+                    <button class="btn btn-outline-secondary btn-rounded btn-action">
+                      <i class="fal fa-times"></i>
+                    </button>
+                    <a href="#" class="btn btn-outline-success btn-small">Ver promoção</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-content-promo">
+              <div class="promo-title">
+                <h3 class="title">Trazer para a loja</h3>
+              </div>
+              <div class="promos">
+                <div class="promo-item">
+                  <div class="promo-item-image">
+                    <img src="../assets/img/promo-item.png" alt="" />
+                  </div>
+                  <div class="promo-item-desc">
+                    No seu aniversário, ao comprar um hamburguer clássico, o refrigerante e as fritas são por nossa conta!
+                  </div>
+                  <div class="promo-item-indicator">
+                    <div class="promo-item-total">
+                      <span class="total-desc">Total de resgates dessa promoção</span>
+                      <span class="total-number">148</span>
+                    </div>
+                    <div class="promo-item-ticket">
+                      <span class="ticket-desc">Ticket médio dessa promoção</span>
+                      <span class="ticket-value">R$ 23,80</span>
+                    </div>
+                  </div>
+                  <div class="promo-item-buttons">
+                    <button class="btn btn-outline-secondary btn-rounded btn-action">
+                      <i class="fal fa-times"></i>
+                    </button>
+                    <a href="#" class="btn btn-outline-success btn-small">Ver promoção</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Finalizadas vazio -->
+          <div class="tab-pane fade" id="pills-finalizadas-vazio" role="tabpanel" aria-labelledby="pills-finalizadas-vazio-tab">
+            <div class="tab-content-promo empty">
+              <div class="empty-image">
+                <img src="../assets/img/promo-finalizada.png" alt="" />
+              </div>
+              <div class="empty-title">
+                <h2 class="title title-xl">
+                  Você não possui promoções finalizadas
+                </h2>
+              </div>
+              <div class="empty-desc">
+                Todas as suas promoções ainda estão ativas ou estão agendadas para os próximos meses
+              </div>
+              <div class="empty-button">
+                <button class="btn btn-success">Criar promoções</button>
+              </div>
+            </div>
+          </div>
+          <!-- Finalizadas -->
+          <div class="tab-pane fade" id="pills-finalizadas" role="tabpanel" aria-labelledby="pills-finalizadas-tab">
+            <div class="tab-content-promo no-pd no-bd">
+              <div class="promo-filter">
+                <div class="input-group has-label">
+                  <label for="input-2">Pesquisar por nome da promoção</label>
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="fal fa-search"></i></span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Insira o nome da promoção" aria-label="Insira o nome da promoção" aria-describedby="basic-addon1" />
+                </div>
+                <div class="form-group has-label">
+                  <label for="input-2">Filtrar por tipo</label>
+                  <input type="text" class="form-control" id="input-2" placeholder="Todas" />
+                </div>
+                <div class="form-group has-label">
+                  <label for="input-2">Filtrar por período da oferta</label>
+                  <input type="text" class="form-control" id="input-2" placeholder="20/11/2019 - 10/12/2019" />
+                </div>
+                <div class="filter-button">
+                  <input type="button" class="btn btn-success" value="Pesquisar" />
+                </div>
+              </div>
+
+              <div class="promo-table">
+                <div class="table-responsive">
+                  <table class="table table-promotions align-items-center">
+                    <thead>
+                      <tr>
+                        <th class="image" scope="col">Imagem</th>
+                        <th class="desc" scope="col">Descrição da oferta</th>
+                        <th class="indicator-td" scope="col">Indicadores</th>
+                        <th class="buttons" scope="col">Ações</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="image">
+                          <div class="promo-item-image">
+                            <img src="../assets/img/promo-item.png" alt="" />
+                          </div>
+                        </td>
+                        <td class="desc">
+                          <div class="promo-item-desc">
+                            <span class="desc-content">No seu aniversário, ao comprar um hamburguer clássico, o refrigerante e as fritas são por nossa conta!</span>
+                            <span class="badge badge-primary">Aniversariantes</span>
+                          </div>
+                        </td>
+                        <td class="indicator-td">
+                          <div class="promo-item-indicator">
+                            <div class="promo-item-total">
+                              <span class="total-desc">Total de resgates dessa promoção</span>
+                              <span class="total-number">148</span>
+                            </div>
+                            <div class="promo-item-ticket">
+                              <span class="ticket-desc">Ticket médio dessa promoção</span>
+                              <span class="ticket-value">R$ 23,80</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="buttons">
+                          <div class="promo-item-buttons">
+                            <a href="#" class="btn btn-outline-success btn-small">Ver promoção</a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="image">
+                          <div class="promo-item-image">
+                            <img src="../assets/img/promo-item.png" alt="" />
+                          </div>
+                        </td>
+                        <td class="desc">
+                          <div class="promo-item-desc">
+                            <span class="desc-content">No seu aniversário, ao comprar um hamburguer clássico, o refrigerante e as fritas são por nossa conta!</span>
+                            <span class="badge badge-primary">Aniversariantes</span>
+                          </div>
+                        </td>
+                        <td class="indicator-td">
+                          <div class="promo-item-indicator">
+                            <div class="promo-item-total">
+                              <span class="total-desc">Total de resgates dessa promoção</span>
+                              <span class="total-number">148</span>
+                            </div>
+                            <div class="promo-item-ticket">
+                              <span class="ticket-desc">Ticket médio dessa promoção</span>
+                              <span class="ticket-value">R$ 23,80</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="buttons">
+                          <div class="promo-item-buttons">
+                            <a href="#" class="btn btn-outline-success btn-small">Ver promoção</a>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <nav aria-label="Page navigation">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">
+                      <i class="far fa-angle-left"></i>
+                    </span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">
+                      <i class="far fa-angle-right"></i>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- Agendadas vazio -->
+          <div class="tab-pane fade" id="pills-agendadas-vazio" role="tabpanel" aria-labelledby="pills-agendadas-vazio-tab">
+            <div class="tab-content-promo empty">
+              <div class="empty-image">
+                <img src="../assets/img/promo-agendada.png" alt="" />
+              </div>
+              <div class="empty-title">
+                <h2 class="title title-xl">
+                  Você não possui promoções agendadas
+                </h2>
+              </div>
+              <div class="empty-desc">
+                Você não programou nenhuma de suas promoções usando agendamento. Veja suas ofertas ativas ou crie outras promoções
+              </div>
+              <div class="empty-button">
+                <button class="btn btn-success">Criar promoções</button>
+              </div>
+            </div>
+          </div>
+          <!-- Agendadas -->
+          <div class="tab-pane fade" id="pills-agendadas" role="tabpanel" aria-labelledby="pills-agendadas-tab">
+            <div class="tab-content-promo no-pd no-bd">
+              <div class="promo-filter">
+                <div class="input-group has-label">
+                  <label for="input-2">Pesquisar por nome da promoção</label>
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="fal fa-search"></i></span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Insira o nome da promoção" aria-label="Insira o nome da promoção" aria-describedby="basic-addon1" />
+                </div>
+                <div class="form-group has-label">
+                  <label for="input-2">Filtrar por tipo</label>
+                  <input type="text" class="form-control" id="input-2" placeholder="Todas" />
+                </div>
+                <div class="form-group has-label">
+                  <label for="input-2">Filtrar por período da oferta</label>
+                  <input type="text" class="form-control" id="input-2" placeholder="20/11/2019 - 10/12/2019" />
+                </div>
+                <div class="filter-button">
+                  <input type="button" class="btn btn-success" value="Pesquisar" />
+                </div>
+              </div>
+
+              <div class="promo-table">
+                <div class="table-responsive">
+                  <table class="table table-promotions align-items-center">
+                    <thead>
+                      <tr>
+                        <th class="image" scope="col">Imagem</th>
+                        <th class="desc" scope="col">Descrição da oferta</th>
+                        <th class="indicator-td" scope="col">Começa em</th>
+                        <th class="buttons" scope="col">Ações</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="image">
+                          <div class="promo-item-image">
+                            <img src="../assets/img/promo-item.png" alt="" />
+                          </div>
+                        </td>
+                        <td class="desc">
+                          <div class="promo-item-desc">
+                            <span class="desc-content">No seu aniversário, ao comprar um hamburguer clássico, o refrigerante e as fritas são por nossa conta!</span>
+                            <span class="badge badge-primary">Aniversariantes</span>
+                          </div>
+                        </td>
+                        <td class="indicator-td">
+                          <span class="promo-item-date">14 de junho de 2019</span>
+                        </td>
+                        <td class="buttons">
+                          <div class="promo-item-buttons">
+                            <button class="btn btn-outline-secondary btn-rounded btn-action">
+                              <i class="fal fa-times"></i>
+                            </button>
+                            <a href="#" class="btn btn-outline-success btn-small">Ver promoção</a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="image">
+                          <div class="promo-item-image">
+                            <img src="../assets/img/promo-item.png" alt="" />
+                          </div>
+                        </td>
+                        <td class="desc">
+                          <div class="promo-item-desc">
+                            <span class="desc-content">No seu aniversário, ao comprar um hamburguer clássico, o refrigerante e as fritas são por nossa conta!</span>
+                            <span class="badge badge-primary">Aniversariantes</span>
+                          </div>
+                        </td>
+                        <td class="indicator-td">
+                          <span class="promo-item-date">14 de junho de 2019</span>
+                        </td>
+                        <td class="buttons">
+                          <div class="promo-item-buttons">
+                            <button class="btn btn-outline-secondary btn-rounded btn-action">
+                              <i class="fal fa-times"></i>
+                            </button>
+                            <a href="#" class="btn btn-outline-success btn-small">Ver promoção</a>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <nav aria-label="Page navigation">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">
+                      <i class="far fa-angle-left"></i>
+                    </span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">
+                      <i class="far fa-angle-right"></i>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <!-- Rascunhos vazio -->
+          <div class="tab-pane fade" id="pills-rascunhos-vazio" role="tabpanel" aria-labelledby="pills-rascunhos-vazio-tab">
+            <div class="tab-content-promo empty">
+              <div class="empty-image">
+                <img src="../assets/img/promo-rascunho.png" alt="" />
+              </div>
+              <div class="empty-title">
+                <h2 class="title title-xl">Você não possui rascunhos</h2>
+              </div>
+              <div class="empty-desc">
+                Todas as suas promoções foram configuradas completamente e estão ativas, agendadas ou finalizadas
+              </div>
+              <div class="empty-button">
+                <button class="btn btn-success">Criar promoções</button>
+              </div>
+            </div>
+          </div>
+          <!-- Rascunhos -->
+          <div class="tab-pane fade" id="pills-rascunhos" role="tabpanel" aria-labelledby="pills-rascunhos-tab">
+            <div class="tab-content-promo no-pd no-bd">
+              <div class="promo-filter">
+                <div class="input-group has-label">
+                  <label for="input-2">Pesquisar por nome da promoção</label>
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"><i class="fal fa-search"></i></span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Insira o nome da promoção" aria-label="Insira o nome da promoção" aria-describedby="basic-addon1" />
+                </div>
+                <div class="form-group has-label">
+                  <label for="input-2">Filtrar por tipo</label>
+                  <input type="text" class="form-control" id="input-2" placeholder="Todas" />
+                </div>
+                <div class="form-group has-label">
+                  <label for="input-2">Filtrar por período da oferta</label>
+                  <input type="text" class="form-control" id="input-2" placeholder="20/11/2019 - 10/12/2019" />
+                </div>
+                <div class="filter-button">
+                  <input type="button" class="btn btn-success" value="Pesquisar" />
+                </div>
+              </div>
+
+              <div class="promo-table">
+                <div class="table-responsive">
+                  <table class="table table-promotions align-items-center">
+                    <thead>
+                      <tr>
+                        <th class="image" scope="col">Imagem</th>
+                        <th class="desc" scope="col">Descrição da oferta</th>
+                        <th class="buttons" scope="col">Ações</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="image">
+                          <div class="promo-item-image">
+                            <img src="../assets/img/promo-item.png" alt="" />
+                          </div>
+                        </td>
+                        <td class="desc">
+                          <div class="promo-item-desc">
+                            <span class="desc-content">No seu aniversário, ao comprar um hamburguer clássico, o refrigerante e as fritas são por nossa conta!</span>
+                            <span class="badge badge-primary">Aniversariantes</span>
+                          </div>
+                        </td>
+                        <td class="buttons">
+                          <div class="promo-item-buttons">
+                            <a href="#" class="btn btn-outline-success btn-small">Editar</a>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="image">
+                          <div class="promo-item-image">
+                            <img src="../assets/img/promo-item.png" alt="" />
+                          </div>
+                        </td>
+                        <td class="desc">
+                          <div class="promo-item-desc">
+                            <span class="desc-content">No seu aniversário, ao comprar um hamburguer clássico, o refrigerante e as fritas são por nossa conta!</span>
+                            <span class="badge badge-primary">Aniversariantes</span>
+                          </div>
+                        </td>
+                        <td class="buttons">
+                          <div class="promo-item-buttons">
+                            <a href="#" class="btn btn-outline-success btn-small">Editar</a>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <nav aria-label="Page navigation">
+              <ul class="pagination">
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">
+                      <i class="far fa-angle-left"></i>
+                    </span>
+                  </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">
+                      <i class="far fa-angle-right"></i>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+{% endblock %}

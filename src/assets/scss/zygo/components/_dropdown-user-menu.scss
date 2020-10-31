@@ -1,0 +1,55 @@
+.dropdown-user-menu {
+  .dropdown {
+    > a {
+      display: flex;
+      align-items: center;
+
+      .media {
+        display: flex;
+        align-items: center;
+        .avatar {
+          margin-right: 10px;
+          img {
+            width: 45px;
+            height: 45px;
+          }
+        }
+        .media-body {
+          font-size: 1rem;
+          font-weight: 700;
+        }
+      }
+
+      &:after {
+        content: "\f107";
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 300;
+        font-size: 20px;
+        position: relative;
+        top: 2px;
+      }
+    }
+    .dropdown-menu {
+      .dropdown-header {
+        text-transform: none;
+
+        h5 {
+          margin-bottom: 0;
+        }
+      }
+      .dropdown-item {
+        > i {
+          margin-right: 5px;
+          vertical-align: 6%;
+        }
+      }
+    }
+    &.show {
+      > a {
+        &:after {
+          content: "\f106";
+        }
+      }
+    }
+  }
+}

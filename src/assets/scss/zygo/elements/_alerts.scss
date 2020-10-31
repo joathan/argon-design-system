@@ -1,0 +1,19 @@
+.alert {
+  font-size: $font-size-base;
+
+  i {
+    // font-size: 18px;
+  }
+
+  .btn-alert-action {
+    position: absolute;
+    right: 15px;
+    top: 14px;
+    color: #353535;
+  }
+
+  .mobile-link {
+    color: inherit;
+    text-decoration: underline;
+  }
+}

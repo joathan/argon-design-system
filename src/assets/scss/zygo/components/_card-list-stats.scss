@@ -1,0 +1,33 @@
+.card {
+  &.card-list-stats {
+    margin-bottom: 25px;
+
+    .list-stats-group {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 -5px 0;
+
+      .stats-group-item {
+        margin: 0 5px;
+
+        .stats-group-item-title {
+          font-weight: bold;
+          color: $body-color;
+          margin-bottom: 5px;
+        }
+
+        .stats-group-item-container {
+          .card {
+            &.card-stats {
+              width: inherit;
+            }
+          }
+        }
+      }
+
+      @media (max-width: 991px) {
+        margin: 15px -5px 0;
+      }
+    }
+  }
+}

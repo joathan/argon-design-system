@@ -1,0 +1,25 @@
+.hr {
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+
+    border: 1px solid $default;
+    border-bottom: 0;
+    width: 100%;
+    height: 0;
+    top: 50%;
+    left: 0;
+  }
+
+  > * {
+    font-size: $small-font-size;
+    // color: $text-muted;
+    background: $body-bg;
+    padding: 0 1em;
+    z-index: 1;
+    position: relative;
+  }
+}

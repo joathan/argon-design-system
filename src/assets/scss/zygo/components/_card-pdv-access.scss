@@ -1,0 +1,32 @@
+.card {
+  &.card-pdv-access {
+    .card-body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .pdv-store-code {
+        display: flex;
+        align-items: center;
+
+        .store-code {
+          display: inline-block;
+          margin-right: 15px;
+          margin-bottom: 0;
+
+          small {
+            font-weight: normal;
+          }
+        }
+
+        .btn {
+          padding: 5px;
+        }
+      }
+
+      .pdv-access-action {
+        align-self: flex-end;
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+<aside class="navbar navbar-vertical fixed-left navbar-expand-lg" id="sidebar">
+  <div class="navbar-header">
+    <div class="navbar-header-section">
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#sidebar-collapse" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="far fa-bars"></i>
+      </button>
+    </div>
+
+    <div class="navbar-header-section section-brand">
+      <a class="navbar-brand" href="/">
+        <img src="https://s3.amazonaws.com/assets.companion.com.br/logo-zygo.png" class="navbar-brand-img" alt="..." />
+      </a>
+    </div>
+
+    <div class="navbar-header-section">
+      <button class="navbar-toggle-layout" type="button">
+        <i class="far fa-bars"></i>
+      </button>
+
+      <ul class="dropdown-user-menu nav">
+        <li class="nav-item dropdown">
+          <a href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="media">
+              <span class="avatar rounded-circle">
+                <img src="https://i.pravatar.cc/45" />
+              </span>
+            </div>
+          </a>
+
+          <div class="dropdown-menu dropdown-menu-right">
+            <div class="dropdown-header">
+              <h5 class="">Bem-vinda!</h5>
+            </div>
+            <a href="../examples/profile.html" class="dropdown-item">
+              <i class="fal fa-fw fa-user-circle"></i>
+              <span>Meus daddos</span>
+            </a>
+            <a href="../examples/profile.html" class="dropdown-item">
+              <i class="fal fa-fw fa-file-invoice"></i>
+              <span>Cobrança</span>
+            </a>
+
+            <div class="dropdown-divider"></div>
+
+            <a href="#!" class="dropdown-item">
+              <i class="fal fa-fw fa-sign-out"></i>
+              <span>Sair</span>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="navbar-inner">
+    <div class="collapse navbar-collapse" id="sidebar-collapse">
+      <div class="navbar-collapse-header">
+        <div class="navbar-header-section">
+          <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#sidebar-collapse" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle sidenav">
+            <i class="far fa-times"></i>
+          </button>
+        </div>
+
+        <div class="navbar-header-section section-brand">
+          <a class="navbar-brand" href="/">
+            <img src="https://s3.amazonaws.com/assets.companion.com.br/logo-zygo.png" class="navbar-brand-img" alt="..." />
+          </a>
+        </div>
+      </div>
+
+      {% for item in global.menu %}
+      <!-- Se é uma categoria e possui um nome -->
+      {% if item.category_name %}
+      <hr />
+      <h6 class="navbar-heading">{{ item.category_name }}</h6>
+      {% endif %}
+
+      <ul class="navbar-nav">
+        {% for menuItem in item.menuList %}
+
+        <!-- Se possuí subitens (IF) -->
+        {% if menuItem.submenuList %}
+        <li class="nav-item">
+          <a data-toggle="collapse" class="nav-link" href="#{{ menuItem.elementRef }}" role="button" aria-expanded="false">
+            <i class="fa fa-{{ menuItem.icon }} fa-fw"></i>
+            <span>{{ menuItem.name }}</span>
+          </a>
+          <ul class="collapse" id="{{ menuItem.elementRef }}">
+            {% for menuSubitem in menuItem.submenuList %}
+            <li class="nav-item">
+              <a href="{{ menuSubitem.url }}" class="nav-link">
+                <span>{{ menuSubitem.name }}</span>
+              </a>
+            </li>
+            {% endfor %}
+          </ul>
+        </li>
+
+        {% else %}
+
+        <li class="nav-item">
+          <a href="{{ menuItem.url }}" class="nav-link">
+            <i class="fa fa-{{ menuItem.icon }} fa-fw"></i>
+            <span>{{ menuItem.name }}</span>
+          </a>
+        </li>
+
+        {% endif %}
+        <!-- END (IF) -->
+        {% endfor %}
+      </ul>
+      {% endfor %}
+    </div>
+  </div>
+</aside>

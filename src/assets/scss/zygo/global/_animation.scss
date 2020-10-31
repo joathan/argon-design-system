@@ -1,0 +1,36 @@
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes click-ripple {
+  100% {
+    opacity: 0;
+    transform: scale(3);
+  }
+}
+
+.click-ripple {
+  display: block;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 100%;
+  transform: scale(0);
+
+  &.animate {
+    animation: click-ripple 0.9s ease-out;
+  }
+}
+@keyframes contentLoading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}

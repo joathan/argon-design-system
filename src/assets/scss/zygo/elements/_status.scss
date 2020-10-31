@@ -1,0 +1,30 @@
+.status {
+  display: flex;
+  align-items: center;
+
+  .status-color {
+    background: $default;
+    min-width: 15px;
+    height: 15px;
+    border-radius: 50%;
+  }
+
+  .status-text {
+    margin-left: 8px;
+    font-size: 14px;
+  }
+
+  @each $color, $value in $theme-colors {
+    &.status-#{$color} {
+      .status-color {
+        background: $value;
+      }
+    }
+  }
+
+  &.dark {
+    .status-text {
+      color: #fff;
+    }
+  }
+}
